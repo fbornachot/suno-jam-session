@@ -1,0 +1,114 @@
+[
+ {
+  "id": "build_explosion",
+  "label": "Montée lente → explosion",
+  "phrase": [
+   "structure: slow restrained build that tightens bar after bar, then a sudden full-band explosion",
+   "long patient build of tension released in one sudden explosive section"
+  ],
+  "tags": [
+   "[Intro: {lead} alone, sparse]",
+   "[Verse: {drums} in, restrained]",
+   "[Build Up: layers stacking]",
+   "[Build Up: tension rising]",
+   "[Chorus: full band, explosive]",
+   "{solo}",
+   "[Outro: {lead} alone again]",
+   "[Fade Out]",
+   "[End]"
+  ]
+ },
+ {
+  "id": "calm_violence",
+  "label": "Alternance calme / violence",
+  "phrase": [
+   "structure: hushed sections alternating with violent loud bursts, dynamic whiplash",
+   "quiet-loud dynamics, fragile passages cut by sudden heavy surges"
+  ],
+  "tags": [
+   "[Intro: {lead}, quiet and close]",
+   "[Verse: stripped back, {low} only]",
+   "[Chorus: loud, saturated, full drums]",
+   "[Verse: fragile again]",
+   "[Chorus: heavier than before]",
+   "[Break: sudden silence]",
+   "[Chorus: full band]",
+   "[End]"
+  ]
+ },
+ {
+  "id": "hypnosis",
+  "label": "Hypnose sans explosion",
+  "phrase": [
+   "structure: hypnotic repetition, slow evolving layers, no climax, trance through insistence",
+   "insistent repeating figure that mutates slowly, no drop, no climax"
+  ],
+  "tags": [
+   "[Intro: {sig} alone]",
+   "[Verse: {drums}, locked groove]",
+   "[Verse: {texture} added]",
+   "[Break: motif mutates, no climax]",
+   "[Verse: texture thickens]",
+   "[Outro: layers peel away]",
+   "[Fade Out]",
+   "[End]"
+  ]
+ },
+ {
+  "id": "central_break",
+  "label": "Break central qui bascule",
+  "phrase": [
+   "structure: strong groove, then a central break that changes the perspective before the groove returns transformed",
+   "groove-driven first half, a perception-shifting middle break, transformed return"
+  ],
+  "tags": [
+   "[Intro: {drums} and {low}]",
+   "[Verse: {sig}]",
+   "[Chorus: full band, driving]",
+   "[Break: everything drops]",
+   "[Bridge: {texture}, new color]",
+   "[Chorus: {sig} returns, heavier]",
+   "{solo}",
+   "[Outro: cut dead]",
+   "[End]"
+  ]
+ },
+ {
+  "id": "trigger_entry",
+  "label": "Entrée qui déclenche tout",
+  "phrase": [
+   "structure: suspended opening, then the drums and bass enter and ignite everything",
+   "held-breath intro, a single drum or bass entry that sets the whole track in motion"
+  ],
+  "tags": [
+   "[Intro: {texture}, no pulse]",
+   "[Drop: {drums} and {low} enter]",
+   "[Verse: full band locked]",
+   "[Chorus: {sig}, wide]",
+   "[Break: brief tension]",
+   "[Chorus: full band]",
+   "[Outro: groove rides out]",
+   "[Fade Out]",
+   "[End]"
+  ]
+ },
+ {
+  "id": "long_form",
+  "label": "Forme longue / suite",
+  "phrase": [
+   "structure: long-form suite, distinct movements flowing into each other, slow evolution",
+   "multi-part journey, movements linked by textural transitions"
+  ],
+  "tags": [
+   "[Intro: {texture}, atmosphere]",
+   "[Verse: {lead} theme]",
+   "[Interlude: textural drift]",
+   "[Build Up: {drums} gathers]",
+   "[Chorus: peak, full intensity]",
+   "{solo}",
+   "[Outro: opening theme returns]",
+   "[Fade Out]",
+   "[End]"
+  ]
+ }
+]

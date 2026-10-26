@@ -1,0 +1,188 @@
+{
+  "id": "neoclassical",
+  "label": "Néo-classique / suspension",
+  "blurb": "Piano, cordes, temps suspendu, gravité sans mièvrerie.",
+  "core": [
+    "neoclassical piano and strings, suspended time",
+    "modern chamber music, minimal and grave"
+  ],
+  "tags": [
+    "neoclassical",
+    "modern classical",
+    "chamber"
+  ],
+  "exclude": [
+    "orchestral trailer",
+    "new age",
+    "film score"
+  ],
+  "defaults": {
+    "era": "modern_close",
+    "drums": "none",
+    "arc": "build_explosion",
+    "signature": "melody",
+    "moods": [
+      "suspended",
+      "consoling"
+    ],
+    "bpm": 66,
+    "key": "D minor",
+    "sliders": {
+      "grain": 65,
+      "saturation": 20,
+      "space": 70,
+      "tension": 50,
+      "hypnosis": 60,
+      "roots": 0,
+      "placement": 40
+    },
+    "instruments": [
+      "piano_felt",
+      "strings_section",
+      "cello"
+    ]
+  },
+  "grafts": [
+    {
+      "id": "prepared_piano",
+      "label": "Piano préparé",
+      "phrase": "a prepared piano, muted and metallic strings"
+    },
+    {
+      "id": "rain_room",
+      "label": "Pluie & pièce",
+      "phrase": "rain on the window and the room breathing"
+    },
+    {
+      "id": "degraded_tape",
+      "label": "Bande dégradée",
+      "phrase": "degraded tape loops of the piano itself"
+    },
+    {
+      "id": "far_horn",
+      "label": "Cor lointain",
+      "phrase": "a distant French horn far behind the strings"
+    }
+  ],
+  "far": [
+    {
+      "id": "synth_arp",
+      "label": "Arpège analogique",
+      "phrase": "a soft analog synth arpeggio under the strings"
+    },
+    {
+      "id": "sub_pulse",
+      "label": "Pulsation électronique",
+      "phrase": "a slow electronic pulse beneath the chamber group"
+    },
+    {
+      "id": "far_guitar",
+      "label": "Guitare saturée lointaine",
+      "phrase": "a distant overdriven guitar swell, like a storm far away"
+    }
+  ],
+  "extra": [
+    "the mechanics of the instruments audible",
+    "harmonies that resolve late",
+    "restraint that burns inside"
+  ],
+  "presets": [
+    {
+      "id": "riverside",
+      "label": "Rivière obsédante",
+      "ref": "Riverside",
+      "note": "Ostinato de piano, cordes pincées, obsession douce.",
+      "set": {
+        "signature": "loop",
+        "arc": "hypnosis",
+        "moods": [
+          "melancholic",
+          "suspended"
+        ],
+        "instruments": [
+          "piano_grand",
+          "cello",
+          "harpsichord"
+        ],
+        "bpm": 76
+      },
+      "detail": [
+        "an obsessive rolling piano ostinato, plucked and bowed cello, dark water flowing"
+      ]
+    },
+    {
+      "id": "end_exploring",
+      "label": "Choral de cordes",
+      "ref": "The End of All Our Exploring",
+      "note": "Cordes lentes, harmonie qui s'ouvre, consolation.",
+      "set": {
+        "signature": "rise",
+        "moods": [
+          "consoling",
+          "bittersweet"
+        ],
+        "instruments": [
+          "strings_section",
+          "piano_felt",
+          "synth_pad"
+        ],
+        "bpm": 58,
+        "sliders": {
+          "space": 80
+        }
+      },
+      "detail": [
+        "slow strings opening like a chorale, felt piano drops, warmth growing from stillness"
+      ]
+    },
+    {
+      "id": "build_a_home",
+      "label": "Foyer fragile",
+      "ref": "To Build a Home",
+      "note": "Piano nu puis cordes qui portent, émotion pudique.",
+      "set": {
+        "signature": "melody",
+        "arc": "build_explosion",
+        "drums": "brushed_soft",
+        "moods": [
+          "bittersweet",
+          "consoling"
+        ],
+        "instruments": [
+          "piano_grand",
+          "strings_section",
+          "bass_upright"
+        ],
+        "bpm": 62
+      },
+      "detail": [
+        "a lone piano theme, strings arriving to carry it, a modest restrained swell"
+      ]
+    },
+    {
+      "id": "pulsed_neoclassic",
+      "label": "Néo-classique pulsé",
+      "ref": "Création",
+      "note": "Ostinato minimaliste, pulsation électronique qui monte, cordes jusqu'au sommet.",
+      "set": {
+        "drums": "electronic_loop",
+        "arc": "build_explosion",
+        "signature": "loop",
+        "moods": [
+          "tense",
+          "suspended"
+        ],
+        "instruments": [
+          "piano_grand",
+          "strings_section",
+          "bass_synth"
+        ],
+        "graft": "sub_pulse",
+        "bpm": 84
+      },
+      "detail": [
+        "a minimalist piano ostinato, a slow electronic pulse creeping in beneath, strings rising to a weighty peak"
+      ]
+    }
+  ]
+}

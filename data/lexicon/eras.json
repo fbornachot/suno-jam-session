@@ -1,0 +1,13 @@
+[
+  { "id": "late60s", "label": "Fin 60s", "phrase": ["late-1960s analog studio recording, live room bleed, warm tube console", "late-60s eight-track tape session, players in one room, natural bleed"] },
+  { "id": "early70s", "label": "Début 70s", "phrase": ["early-1970s analog tape, dry dead-room drums, warm transformer saturation", "early-70s sixteen-track session, tight dry room, tape compression"] },
+  { "id": "late70s", "label": "Fin 70s", "phrase": ["late-1970s big-studio sound, wide stereo, plate reverb, polished tape warmth with live feel", "late-70s analog studio, fat tape low end, plate reverb on the snare"] },
+  { "id": "80s_newwave", "label": "80s new wave", "phrase": ["early-1980s new wave production, gated room ambience, chorus on everything, analog synths beside live band", "80s new wave studio, crisp gated space, chorused guitars, early drum machines next to real kit"] },
+  { "id": "80s_8bit", "label": "80s demoscene", "phrase": ["late-1980s home-computer era, four-channel tracker textures, crunchy 8-bit samples, hard-panned voices", "Amiga-era tracker production, low-bit sample grit, ping-pong panning, arpeggiated chords"] },
+  { "id": "90s_analog", "label": "90s analog", "phrase": ["mid-1990s analog-to-digital studio, sampler grit, tape and early digital hybrid, dark warm mix", "90s studio with tape machines and samplers, dusty breaks, warm low-mids"] },
+  { "id": "90s_live", "label": "90s rock live room", "phrase": ["1990s alternative rock studio, big live room, close and room mics, amps cranked in the room", "90s alt-rock session, roomy drums, real amps pushed, minimal editing"] },
+  { "id": "2000s_indie", "label": "2000s indie", "phrase": ["2000s indie studio, punchy but organic, analog gear into digital, band tracked live", "mid-2000s indie rock recording, tight live tracking, vintage amps, modern clarity"] },
+  { "id": "modern_close", "label": "Moderne intime", "phrase": ["modern intimate production, close-miked instruments, audible room and mechanical noise, deep low end", "contemporary bedroom-meets-studio sound, close mics, felt and finger noise, sub-weight"] },
+  { "id": "modern_wide", "label": "Moderne large", "phrase": ["modern large-format production, wide and deep stereo field, analog character kept, hi-fi detail", "contemporary hi-fi mix with analog saturation, wide image, detailed transients"] },
+  { "id": "timeless", "label": "Hors époque", "phrase": ["timeless hybrid recording, analog warmth with modern depth, no period pastiche", "era-blurred production, tape character and modern clarity side by side"] }
+]

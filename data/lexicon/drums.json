@@ -1,0 +1,118 @@
+[
+ {
+  "id": "room_acoustic",
+  "label": "Room acoustique",
+  "phrase": [
+   "live acoustic drum kit with real room sound, skins and shells audible, ambient overheads",
+   "acoustic kit recorded in a wooden room, natural decay, shells ringing"
+  ],
+  "short": "live kit"
+ },
+ {
+  "id": "dry70s",
+  "label": "Sèche 70s",
+  "phrase": [
+   "dry deadened 70s drum kit, muffled toms, tight snappy snare, close and present",
+   "dead-room seventies drums, towels on the toms, crisp dry snare"
+  ],
+  "short": "dry kit"
+ },
+ {
+  "id": "massive_simple",
+  "label": "Massive simple",
+  "phrase": [
+   "simple but massive drum pattern, huge clear snare, solid kick, every hit structural",
+   "straight heavy backbeat, enormous snare, kick you feel in the chest, nothing fancy"
+  ],
+  "short": "big drums"
+ },
+ {
+  "id": "breakbeat_dirty",
+  "label": "Breakbeat sale",
+  "phrase": [
+   "slow dirty breakbeat, sampled and resampled, crunchy snare, swung hi-hats",
+   "heavy chopped breakbeat, gritty sampler texture, lazy swing"
+  ],
+  "short": "breakbeat"
+ },
+ {
+  "id": "electronic_loop",
+  "label": "Boucle électronique",
+  "phrase": [
+   "hypnotic electronic drum loop, analog drum machine, deep kick, ticking hats",
+   "repeating analog drum-machine pattern, pulsing kick, crisp metallic hats"
+  ],
+  "short": "drum machine"
+ },
+ {
+  "id": "motorik",
+  "label": "Motorik",
+  "phrase": [
+   "relentless motorik beat, steady eighth-note pulse, kick and snare locked like a machine",
+   "driving motorik groove, unchanging forward pulse"
+  ],
+  "short": "motorik beat"
+ },
+ {
+  "id": "brushed_soft",
+  "label": "Balais / toucher fin",
+  "phrase": [
+   "soft brushed drums, fine touch, ghost notes, intimate and close",
+   "light brushes and rim clicks, delicate ghost notes"
+  ],
+  "short": "brushes"
+ },
+ {
+  "id": "tribal_toms",
+  "label": "Toms tribaux",
+  "phrase": [
+   "rolling floor-tom pattern, tribal and physical, sparse cymbals",
+   "pounding tom-driven groove, ritual feel, cymbals held back"
+  ],
+  "short": "toms"
+ },
+ {
+  "id": "funky_tight",
+  "label": "Funk serré",
+  "phrase": [
+   "tight funky drumming, syncopated kick, crisp ghost-noted snare, open hi-hat barks",
+   "pocket-heavy funk kit, ghost notes, snappy snare, hats that bark"
+  ],
+  "short": "funk drums"
+ },
+ {
+  "id": "hybrid",
+  "label": "Hybride kit + machine",
+  "phrase": [
+   "live kit layered with a drum machine, acoustic weight plus electronic pulse",
+   "hybrid drums, real kit doubled by analog machine hits"
+  ],
+  "short": "kit and machine"
+ },
+ {
+  "id": "none",
+  "label": "Sans batterie",
+  "phrase": [
+   "no percussion, pulse carried by bass and repeated figures"
+  ],
+  "short": "pulse"
+ },
+ {
+  "id": "boom_bap",
+  "label": "Boom bap",
+  "phrase": [
+   "punchy boom-bap drums, fat kick, cracking snare, swung hats",
+   "dusty sampled boom-bap kit, knocking kick, snare like a whip"
+  ],
+  "short": "boom-bap drums"
+ },
+ {
+  "id": "trap_808",
+  "label": "Trap 808",
+  "phrase": [
+   "booming 808 kick and sub, crisp claps, sparse rolling hi-hats",
+   "deep 808 drums, snappy clap, hi-hat rolls used sparingly"
+  ],
+  "short": "808 drums"
+ }
+]

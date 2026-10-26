@@ -1,0 +1,149 @@
+{
+ "grain": {
+  "label": "Grain / friction",
+  "buckets": [
+   {
+    "max": 25,
+    "phrase": "clean detailed sound that still breathes"
+   },
+   {
+    "max": 60,
+    "phrase": "audible human friction, string noise and room air kept"
+   },
+   {
+    "max": 85,
+    "phrase": "raw worked sound, amp hiss, finger noise and small accidents left in"
+   },
+   {
+    "max": 100,
+    "phrase": "deeply raw and physical, grit, breath and accidents front and center, still sculpted"
+   }
+  ]
+ },
+ "saturation": {
+  "label": "Saturation",
+  "buckets": [
+   {
+    "max": 20,
+    "phrase": ""
+   },
+   {
+    "max": 55,
+    "phrase": "gentle tape saturation glues the mix"
+   },
+   {
+    "max": 85,
+    "phrase": "warm analog saturation on the bus, harmonics thick"
+   },
+   {
+    "max": 100,
+    "phrase": "heavily saturated, pushed preamps and crushed tape, distortion as color"
+   }
+  ]
+ },
+ "space": {
+  "label": "Espace",
+  "buckets": [
+   {
+    "max": 20,
+    "phrase": "dry, close, in your face"
+   },
+   {
+    "max": 50,
+    "phrase": "natural room ambience"
+   },
+   {
+    "max": 80,
+    "phrase": "deep spring and plate reverbs, wide space"
+   },
+   {
+    "max": 100,
+    "phrase": "vast cavernous space, long tails, sounds dissolving into distance"
+   }
+  ]
+ },
+ "tension": {
+  "label": "Tension",
+  "buckets": [
+   {
+    "max": 25,
+    "phrase": "relaxed harmonic movement"
+   },
+   {
+    "max": 60,
+    "phrase": "harmony with unresolved suspensions"
+   },
+   {
+    "max": 85,
+    "phrase": "dark tense harmony, minor color, dissonant pulls"
+   },
+   {
+    "max": 100,
+    "phrase": "constant dread, clashing intervals, controlled danger"
+   }
+  ]
+ },
+ "hypnosis": {
+  "label": "Répétition hypnotique",
+  "buckets": [
+   {
+    "max": 25,
+    "phrase": ""
+   },
+   {
+    "max": 60,
+    "phrase": "repeating figures anchor the groove"
+   },
+   {
+    "max": 85,
+    "phrase": "hypnotic insistent repetition"
+   },
+   {
+    "max": 100,
+    "phrase": "trance-inducing repetition, the loop becomes the point"
+   }
+  ]
+ },
+ "roots": {
+  "label": "Racines (hard-rock)",
+  "buckets": [
+   {
+    "max": 15,
+    "phrase": ""
+   },
+   {
+    "max": 50,
+    "phrase": "guitar attack with valve-amp grain"
+   },
+   {
+    "max": 80,
+    "phrase": "physical impact, readable overdrive, band energy"
+   },
+   {
+    "max": 100,
+    "phrase": "urgent physical band power, overdriven amp crunch, quiet-to-loud dynamics"
+   }
+  ]
+ },
+ "placement": {
+  "label": "Placement batterie",
+  "buckets": [
+   {
+    "max": 15,
+    "phrase": "deliberately drunk unquantized feel, hits falling way behind the beat"
+   },
+   {
+    "max": 40,
+    "phrase": "laid-back human timing, sitting behind the beat"
+   },
+   {
+    "max": 70,
+    "phrase": "human timing with a tight pocket"
+   },
+   {
+    "max": 100,
+    "phrase": "machine-locked tight timing"
+   }
+  ]
+ }
+}

@@ -1,0 +1,196 @@
+{
+  "id": "rap_beat",
+  "label": "Rap / beat",
+  "blurb": "Boucle qui hoche la tête, batterie qui claque, sample poussiéreux.",
+  "core": [
+    "hard-hitting hip-hop beat, head-nod groove",
+    "dusty boom-bap production, heavy swing"
+  ],
+  "tags": [
+    "hip-hop beat",
+    "boom bap",
+    "head-nod"
+  ],
+  "exclude": [
+    "rap vocals",
+    "lo-fi chillhop",
+    "EDM"
+  ],
+  "defaults": {
+    "era": "90s_analog",
+    "drums": "boom_bap",
+    "arc": "hypnosis",
+    "signature": "loop",
+    "moods": [
+      "tense",
+      "defiant"
+    ],
+    "bpm": 90,
+    "key": "C minor",
+    "sliders": {
+      "grain": 70,
+      "saturation": 60,
+      "space": 35,
+      "tension": 65,
+      "hypnosis": 80,
+      "roots": 10,
+      "placement": 25
+    },
+    "instruments": [
+      "rhodes",
+      "bass_synth",
+      "turntable"
+    ]
+  },
+  "grafts": [
+    {
+      "id": "horn_chops",
+      "label": "Cuivres samplés",
+      "phrase": "chopped horn stabs from an old soul record"
+    },
+    {
+      "id": "scratches",
+      "label": "Scratchs",
+      "phrase": "turntable scratches cutting the phrase endings"
+    },
+    {
+      "id": "flute_loop",
+      "label": "Flûte samplée",
+      "phrase": "a looped breathy jazz flute sample"
+    },
+    {
+      "id": "detuned_piano",
+      "label": "Piano désaccordé",
+      "phrase": "a detuned honky-tonk piano loop"
+    }
+  ],
+  "far": [
+    {
+      "id": "tracker",
+      "label": "Samples tracker 8-bit",
+      "phrase": "crunchy 8-bit tracker samples and Amiga-style arpeggios"
+    },
+    {
+      "id": "valve_riff",
+      "label": "Riff saturé",
+      "phrase": "an overdriven valve-amp guitar riff looped like a sample"
+    },
+    {
+      "id": "maqam",
+      "label": "Sample oriental",
+      "phrase": "a pitched Middle-Eastern string sample"
+    }
+  ],
+  "extra": [
+    "the loop never lets go",
+    "snare cracks like a whip",
+    "low end you feel in the chest"
+  ],
+  "presets": [
+    {
+      "id": "fight_countdown",
+      "label": "Tension montante",
+      "ref": "Lose Yourself",
+      "note": "Riff de guitare étouffé, accords de piano martelés, tension qui monte.",
+      "set": {
+        "signature": "riff",
+        "arc": "build_explosion",
+        "drums": "massive_simple",
+        "moods": [
+          "urgent",
+          "tense"
+        ],
+        "instruments": [
+          "gtr_crunch",
+          "piano_grand",
+          "bass_pick"
+        ],
+        "bpm": 86,
+        "key": "D minor",
+        "sliders": {
+          "roots": 45
+        }
+      },
+      "detail": [
+        "a palm-muted chugging guitar riff and stabbing piano chords, the beat tightening like a fight countdown"
+      ]
+    },
+    {
+      "id": "dusty_bap",
+      "label": "Boom bap poussiéreux",
+      "ref": "Boom bap 90s",
+      "note": "Boucle soul hachée, caisse claire granuleuse, swing profond.",
+      "set": {
+        "signature": "loop",
+        "drums": "boom_bap",
+        "moods": [
+          "nocturnal",
+          "defiant"
+        ],
+        "instruments": [
+          "rhodes",
+          "bass_upright",
+          "turntable"
+        ],
+        "graft": "horn_chops",
+        "bpm": 92
+      },
+      "detail": [
+        "a chopped soul sample loop, crunchy snare, deep swing, crackle between the hits"
+      ]
+    },
+    {
+      "id": "cinematic_trap",
+      "label": "Trap cinématique",
+      "ref": "Trap sombre",
+      "note": "808 qui gronde, cordes sombres, espace et menace.",
+      "set": {
+        "signature": "bassline",
+        "drums": "trap_808",
+        "moods": [
+          "menacing",
+          "nocturnal"
+        ],
+        "instruments": [
+          "bass_synth",
+          "strings_section",
+          "synth_pad"
+        ],
+        "era": "modern_wide",
+        "bpm": 140,
+        "sliders": {
+          "placement": 85,
+          "space": 65
+        }
+      },
+      "detail": [
+        "booming 808 sub-bass slides, dark cinematic strings, hi-hats held back for menace"
+      ]
+    },
+    {
+      "id": "tracker_bap",
+      "label": "Tracker bap",
+      "ref": "Création",
+      "note": "Boom bap bâti sur des samples tracker Amiga, arpèges chiptune.",
+      "set": {
+        "signature": "loop",
+        "drums": "boom_bap",
+        "era": "80s_8bit",
+        "moods": [
+          "defiant",
+          "dreamlike"
+        ],
+        "instruments": [
+          "synth_arp",
+          "bass_synth",
+          "turntable"
+        ],
+        "graft": "tracker",
+        "bpm": 94
+      },
+      "detail": [
+        "a boom-bap beat built from crunchy four-channel tracker samples, Amiga arpeggios looping like a crate find"
+      ]
+    }
+  ]
+}

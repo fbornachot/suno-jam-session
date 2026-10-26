@@ -1,0 +1,171 @@
+{
+  "protocol": "12 territoires × (4 presets + base) × 25 seeds × 3 angles",
+  "total": 4500,
+  "minLength": 900,
+  "maxLength": 990,
+  "outputsWithFillers": 308,
+  "fillerCharacters": 13317,
+  "removed": {
+    "closer": 3149,
+    "arc": 1533,
+    "era": 298
+  },
+  "available": {
+    "core": 4500,
+    "era": 4500,
+    "drums": 4500,
+    "signature": 4500,
+    "instruments": 4500,
+    "texture": 4500,
+    "harmony": 4500,
+    "space": 4500,
+    "arc": 4500,
+    "moods": 4500,
+    "tempo": 4500,
+    "closer": 4500,
+    "graft": 3625,
+    "detail": 3600
+  },
+  "firstEraHintDiffers": 1864,
+  "eraPresent": 4202,
+  "voiceRoomRemoved": 0,
+  "voiceRoomCases": 4500,
+  "examples": {
+    "closerRemoved": {
+      "territory": "trip_hop",
+      "preset": null,
+      "seed": 1,
+      "angle": "risk",
+      "text": "Sound with identity and grain, drums with character, groove with a real engine."
+    },
+    "arcRemoved": {
+      "territory": "trip_hop",
+      "preset": "sour_noir",
+      "seed": 1,
+      "angle": "hybrid",
+      "text": "Structure: hypnotic repetition, slow evolving layers, no climax, trance through insistence."
+    },
+    "eraRemoved": {
+      "territory": "trip_hop",
+      "preset": "angel_menace",
+      "seed": 3,
+      "angle": "hybrid",
+      "text": "Mid-1990s analog-to-digital studio, sampler grit, tape and early digital hybrid, dark warm mix."
+    },
+    "noDrums": {
+      "angle": "access",
+      "settings": {
+        "territory": "rap_beat",
+        "preset": "dusty_bap",
+        "era": "90s_analog",
+        "drums": "none",
+        "arc": "hypnosis",
+        "signature": "loop",
+        "moods": [
+          "nocturnal",
+          "defiant"
+        ],
+        "bpm": 92,
+        "key": "C minor",
+        "sliders": {
+          "grain": 70,
+          "saturation": 60,
+          "space": 35,
+          "tension": 65,
+          "hypnosis": 80,
+          "roots": 10,
+          "placement": 25
+        },
+        "instruments": [
+          "rhodes",
+          "bass_upright",
+          "turntable"
+        ],
+        "graft": "horn_chops",
+        "voiceRoom": false
+      },
+      "prompt": "Dusty boom-bap production, heavy swing. A chopped soul sample loop, crunchy snare, deep swing, crackle between the hits. 90s studio with tape machines and samplers, dusty breaks, warm low-mids. No percussion, pulse carried by bass and repeated figures. One magnetic loop repeated until it becomes a world. Featuring woody upright bass, warm Rhodes electric piano with tremolo and turntable scratches as rhythmic texture. Plus chopped horn stabs from an old soul record. Raw worked sound, amp hiss, finger noise and small accidents left in, warm analog saturation on the bus, harmonics thick. Dark tense harmony, minor color, dissonant pulls, hypnotic insistent repetition. Natural room ambience. Structure: hypnotic repetition, slow evolving layers, no climax, trance through insistence. Mood: nocturnal and defiant, swaggering. Around 92 BPM, in C minor. Sound with identity and grain, every texture physical and close, pulse with a real engine.",
+      "styleTags": "hip-hop beat, boom bap, head-nod, 92 bpm, C minor, nocturnal, defiant",
+      "structure": "[Instrumental]\n[Intro: loop alone]\n[Verse: pulse, locked groove]\n[Verse: Rhodes added]\n[Break: motif mutates, no climax]\n[Verse: texture thickens]\n[Outro: layers peel away]\n[Fade Out]\n[End]",
+      "exclude": "drums, rap vocals, lo-fi chillhop",
+      "lint": []
+    },
+    "trap": {
+      "angle": "access",
+      "settings": {
+        "territory": "rap_beat",
+        "preset": "cinematic_trap",
+        "era": "modern_wide",
+        "drums": "trap_808",
+        "arc": "hypnosis",
+        "signature": "bassline",
+        "moods": [
+          "menacing",
+          "nocturnal"
+        ],
+        "bpm": 140,
+        "key": "C minor",
+        "sliders": {
+          "grain": 70,
+          "saturation": 60,
+          "space": 65,
+          "tension": 65,
+          "hypnosis": 80,
+          "roots": 10,
+          "placement": 85
+        },
+        "instruments": [
+          "bass_synth",
+          "strings_section",
+          "synth_pad"
+        ],
+        "graft": null,
+        "voiceRoom": false
+      },
+      "prompt": "Dusty boom-bap production, heavy swing. Booming 808 sub-bass slides, dark cinematic strings, hi-hats held back for menace. Contemporary hi-fi mix with analog saturation, wide image, detailed transients. Deep 808 drums, snappy clap, hi-hat rolls used sparingly, machine-locked tight timing. An unforgettable bass figure is the hook. Featuring deep analog synth bass, small string section, close and human and slow analog synth pad, evolving filter. Raw worked sound, amp hiss, finger noise and small accidents left in, warm analog saturation on the bus, harmonics thick. Dark tense harmony, minor color, dissonant pulls, hypnotic insistent repetition. Deep spring and plate reverbs, wide space. Structure: hypnotic repetition, slow evolving layers, no climax, trance through insistence. Mood: quietly menacing and nocturnal. Around 140 BPM, in C minor. Sound with identity and grain, drums with character, groove with a real engine.",
+      "styleTags": "hip-hop beat, boom bap, head-nod, 140 bpm, C minor, quietly menacing, nocturnal",
+      "structure": "[Instrumental]\n[Intro: bassline alone]\n[Verse: 808 drums, locked groove]\n[Verse: strings added]\n[Break: motif mutates, no climax]\n[Verse: texture thickens]\n[Outro: layers peel away]\n[Fade Out]\n[End]",
+      "exclude": "rap vocals, lo-fi chillhop, EDM",
+      "lint": []
+    },
+    "noInstruments": {
+      "angle": "access",
+      "settings": {
+        "territory": "trip_hop",
+        "preset": null,
+        "era": "90s_analog",
+        "drums": "breakbeat_dirty",
+        "arc": "central_break",
+        "signature": "bassline",
+        "moods": [
+          "nocturnal",
+          "menacing"
+        ],
+        "bpm": 78,
+        "key": "D minor",
+        "sliders": {
+          "grain": 70,
+          "saturation": 60,
+          "space": 65,
+          "tension": 75,
+          "hypnosis": 75,
+          "roots": 10,
+          "placement": 35
+        },
+        "instruments": [],
+        "graft": null,
+        "voiceRoom": false
+      },
+      "prompt": "Brooding downtempo trip-hop, dusty and noir. Mid-1990s analog-to-digital studio, sampler grit, tape and early digital hybrid, dark warm mix. Heavy chopped breakbeat, gritty sampler texture, lazy swing, laid-back human timing, sitting behind the beat. An unforgettable bass figure is the hook. Raw worked sound, amp hiss, finger noise and small accidents left in, warm analog saturation on the bus, harmonics thick. Dark tense harmony, minor color, dissonant pulls, hypnotic insistent repetition. Deep spring and plate reverbs, wide space. Sampler pitch-down artifacts. The first seconds promise something. Bass and drums locked as one engine. Instruments in dialogue rather than stacked. Groove-driven first half, a perception-shifting middle break, transformed return. Mood: nocturnal and quietly menacing. Around 78 BPM, in D minor. Mix with physical presence and human friction, characterful drums, bass with weight.",
+      "styleTags": "dark trip-hop, downtempo, noir, 78 bpm, D minor, nocturnal, quietly menacing",
+      "structure": "[Instrumental]\n[Intro: breakbeat and bass]\n[Verse: bassline]\n[Chorus: full band, driving]\n[Break: everything drops]\n[Bridge: atmosphere, new color]\n[Chorus: bassline returns, heavier]\n[Outro: cut dead]\n[End]",
+      "exclude": "lo-fi chillhop, jazzhop, EDM",
+      "lint": [
+        {
+          "level": "warn",
+          "message": "Aucun instrument : Suno choisira seul"
+        }
+      ]
+    }
+  }
+}

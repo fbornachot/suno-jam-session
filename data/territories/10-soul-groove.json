@@ -1,0 +1,188 @@
+{
+  "id": "soul_groove",
+  "label": "Soul / groove habité",
+  "blurb": "Soul chaude, groupe vivant, élégance et pudeur.",
+  "core": [
+    "warm soul, live band in a room",
+    "deep soul groove, tender and physical"
+  ],
+  "tags": [
+    "soul",
+    "vintage soul",
+    "live band"
+  ],
+  "exclude": [
+    "modern R&B",
+    "smooth jazz",
+    "gospel"
+  ],
+  "defaults": {
+    "era": "early70s",
+    "drums": "dry70s",
+    "arc": "central_break",
+    "signature": "melody",
+    "moods": [
+      "bittersweet",
+      "sensual"
+    ],
+    "bpm": 88,
+    "key": "Eb major",
+    "sliders": {
+      "grain": 65,
+      "saturation": 55,
+      "space": 45,
+      "tension": 40,
+      "hypnosis": 40,
+      "roots": 15,
+      "placement": 40
+    },
+    "instruments": [
+      "organ_hammond",
+      "gtr_clean_delay",
+      "bass_finger"
+    ]
+  },
+  "grafts": [
+    {
+      "id": "brass_muted",
+      "label": "Trompette sourdine",
+      "phrase": "a muted trumpet line, breathy and distant"
+    },
+    {
+      "id": "soul_strings",
+      "label": "Cordes soul",
+      "phrase": "a lush soul string arrangement, warm and close"
+    },
+    {
+      "id": "spy_surf",
+      "label": "Guitare de film",
+      "phrase": "a reverb-drenched film-score guitar with tremolo"
+    },
+    {
+      "id": "vibes",
+      "label": "Vibraphone feutré",
+      "phrase": "a soft vibraphone answering the melody"
+    }
+  ],
+  "far": [
+    {
+      "id": "berlin_seq",
+      "label": "Séquenceur analogique",
+      "phrase": "a pulsing analog sequencer under the band"
+    },
+    {
+      "id": "tracker",
+      "label": "Arpèges 8-bit",
+      "phrase": "low-bit tracker-style arpeggios, warm and nostalgic"
+    },
+    {
+      "id": "sub_pulse",
+      "label": "Sub électronique",
+      "phrase": "a deep electronic sub-bass pulse under the organic band"
+    }
+  ],
+  "extra": [
+    "players listening to each other",
+    "tender restraint in the touch",
+    "warm wooden room sound"
+  ],
+  "presets": [
+    {
+      "id": "mend_heart",
+      "label": "Soul pudique",
+      "ref": "How Can You Mend a Broken Heart",
+      "note": "Ballade soul lente, orgue, cordes, retenue.",
+      "set": {
+        "signature": "melody",
+        "arc": "build_explosion",
+        "moods": [
+          "bittersweet",
+          "consoling"
+        ],
+        "instruments": [
+          "organ_hammond",
+          "strings_section",
+          "gtr_clean_delay"
+        ],
+        "bpm": 70
+      },
+      "detail": [
+        "a slow aching soul ballad shape, organ cushion, strings that arrive with discretion"
+      ]
+    },
+    {
+      "id": "nine_lives",
+      "label": "Soul noire cinéma",
+      "ref": "Nine Lives",
+      "note": "Soul sombre, cuivres de film, basse lourde.",
+      "set": {
+        "signature": "bassline",
+        "drums": "breakbeat_dirty",
+        "moods": [
+          "menacing",
+          "sensual"
+        ],
+        "instruments": [
+          "bass_finger",
+          "horns",
+          "rhodes"
+        ],
+        "graft": "spy_surf",
+        "bpm": 92,
+        "sliders": {
+          "tension": 65
+        }
+      },
+      "detail": [
+        "a dark cinematic soul groove, film-score horns, a heavy prowling bassline"
+      ]
+    },
+    {
+      "id": "want_you_back",
+      "label": "Motown électrique",
+      "ref": "I Want You Back",
+      "note": "Groove joyeux, basse virevoltante, entrée irrésistible.",
+      "set": {
+        "signature": "bassline",
+        "arc": "trigger_entry",
+        "drums": "funky_tight",
+        "moods": [
+          "euphoric"
+        ],
+        "instruments": [
+          "bass_finger",
+          "piano_grand",
+          "strings_section"
+        ],
+        "era": "late60s",
+        "bpm": 98
+      },
+      "detail": [
+        "a joyful sixties soul groove, a dancing melodic bassline, a piano glissando that kicks everything off"
+      ]
+    },
+    {
+      "id": "psych_soul",
+      "label": "Soul psyché",
+      "ref": "Création",
+      "note": "Fuzz et wah sur groove soul profond, batterie phasée, cordes de cinéma.",
+      "set": {
+        "signature": "bassline",
+        "moods": [
+          "sensual",
+          "menacing"
+        ],
+        "instruments": [
+          "gtr_fuzz",
+          "strings_section",
+          "bass_finger"
+        ],
+        "graft": "soul_strings",
+        "bpm": 86
+      },
+      "detail": [
+        "fuzz and wah guitar over a deep soul groove, phased drums, cinematic strings"
+      ]
+    }
+  ]
+}

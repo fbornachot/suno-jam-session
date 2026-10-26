@@ -1,0 +1,240 @@
+[
+ {
+  "id": "gtr_clean_delay",
+  "label": "Guitare claire + delay",
+  "role": "lead",
+  "phrase": "clean electric guitar through a hypnotic dotted delay",
+  "short": "delay guitar",
+  "solo": "Guitar Solo"
+ },
+ {
+  "id": "gtr_crunch",
+  "label": "Guitare crunch ampli",
+  "role": "lead",
+  "phrase": "crunchy valve-amp electric guitar, readable saturation, strong pick attack",
+  "short": "crunch guitar",
+  "solo": "Guitar Solo"
+ },
+ {
+  "id": "gtr_fuzz",
+  "label": "Guitare fuzz",
+  "role": "lead",
+  "phrase": "thick fuzz guitar, woolly and huge",
+  "short": "fuzz guitar",
+  "solo": "Guitar Solo"
+ },
+ {
+  "id": "gtr_phaser",
+  "label": "Guitare phaser / flanger",
+  "role": "texture",
+  "phrase": "liquid phaser-swept guitar, slowly moving",
+  "short": "phaser guitar"
+ },
+ {
+  "id": "gtr_acoustic",
+  "label": "Guitare folk",
+  "role": "support",
+  "phrase": "fingerpicked steel-string acoustic guitar, string squeak audible",
+  "short": "acoustic guitar"
+ },
+ {
+  "id": "gtr_nylon",
+  "label": "Guitare nylon",
+  "role": "lead",
+  "phrase": "close nylon-string guitar, soft attack",
+  "short": "nylon guitar",
+  "solo": "Guitar Solo"
+ },
+ {
+  "id": "gtr_wah",
+  "label": "Guitare wah funk",
+  "role": "support",
+  "phrase": "scratchy muted funk guitar with wah",
+  "short": "wah guitar"
+ },
+ {
+  "id": "gtr_feedback",
+  "label": "Feedback / larsen",
+  "role": "texture",
+  "phrase": "controlled amp feedback swells",
+  "short": "feedback"
+ },
+ {
+  "id": "gtr_lead_solo",
+  "label": "Solo mélodique",
+  "role": "lead",
+  "phrase": "a lyrical guitar lead as the arrival point, few notes, crying tone",
+  "short": "lead guitar",
+  "solo": "Guitar Solo"
+ },
+ {
+  "id": "bass_finger",
+  "label": "Basse au doigt",
+  "role": "low",
+  "phrase": "round fingerstyle electric bass",
+  "short": "bass",
+  "solo": "Bass Solo"
+ },
+ {
+  "id": "bass_pick",
+  "label": "Basse au médiator",
+  "role": "low",
+  "phrase": "driving picked bass, growling mids",
+  "short": "picked bass"
+ },
+ {
+  "id": "bass_slap",
+  "label": "Basse slap",
+  "role": "low",
+  "phrase": "percussive slap bass",
+  "short": "slap bass",
+  "solo": "Bass Solo"
+ },
+ {
+  "id": "bass_upright",
+  "label": "Contrebasse",
+  "role": "low",
+  "phrase": "woody upright bass",
+  "short": "upright bass"
+ },
+ {
+  "id": "bass_synth",
+  "label": "Basse synthé",
+  "role": "low",
+  "phrase": "deep analog synth bass",
+  "short": "synth bass"
+ },
+ {
+  "id": "rhodes",
+  "label": "Rhodes",
+  "role": "support",
+  "phrase": "warm Rhodes electric piano with tremolo",
+  "short": "Rhodes",
+  "solo": "Rhodes Solo"
+ },
+ {
+  "id": "piano_felt",
+  "label": "Piano feutré",
+  "role": "lead",
+  "phrase": "felt-muted upright piano, hammers and pedal audible",
+  "short": "felt piano",
+  "solo": "Piano Solo"
+ },
+ {
+  "id": "piano_grand",
+  "label": "Piano à queue",
+  "role": "lead",
+  "phrase": "resonant grand piano, sparse voicings",
+  "short": "piano",
+  "solo": "Piano Solo"
+ },
+ {
+  "id": "organ_hammond",
+  "label": "Orgue Hammond",
+  "role": "support",
+  "phrase": "Hammond organ through a rotary speaker",
+  "short": "organ",
+  "solo": "Organ Solo"
+ },
+ {
+  "id": "mellotron",
+  "label": "Mellotron",
+  "role": "texture",
+  "phrase": "wobbly mellotron strings and flutes",
+  "short": "mellotron"
+ },
+ {
+  "id": "synth_pad",
+  "label": "Nappe analogique",
+  "role": "texture",
+  "phrase": "slow analog synth pad, evolving filter",
+  "short": "pads"
+ },
+ {
+  "id": "synth_arp",
+  "label": "Arpège analogique",
+  "role": "support",
+  "phrase": "sequenced analog synth arpeggio",
+  "short": "arpeggio"
+ },
+ {
+  "id": "synth_lead",
+  "label": "Lead synthé",
+  "role": "lead",
+  "phrase": "monophonic analog synth lead with portamento",
+  "short": "synth lead",
+  "solo": "Synth Solo"
+ },
+ {
+  "id": "strings_section",
+  "label": "Cordes",
+  "role": "support",
+  "phrase": "small string section, close and human",
+  "short": "strings"
+ },
+ {
+  "id": "cello",
+  "label": "Violoncelle",
+  "role": "lead",
+  "phrase": "solo cello, bow noise, deep and close",
+  "short": "cello",
+  "solo": "Cello Solo"
+ },
+ {
+  "id": "trumpet",
+  "label": "Trompette",
+  "role": "lead",
+  "phrase": "trumpet with a dark mellow tone",
+  "short": "trumpet",
+  "solo": "Trumpet Solo"
+ },
+ {
+  "id": "horns",
+  "label": "Section cuivres",
+  "role": "support",
+  "phrase": "punchy horn section stabs",
+  "short": "horns"
+ },
+ {
+  "id": "vibraphone",
+  "label": "Vibraphone",
+  "role": "support",
+  "phrase": "soft vibraphone",
+  "short": "vibraphone"
+ },
+ {
+  "id": "harpsichord",
+  "label": "Clavecin",
+  "role": "support",
+  "phrase": "dry harpsichord",
+  "short": "harpsichord"
+ },
+ {
+  "id": "turntable",
+  "label": "Scratch / platine",
+  "role": "texture",
+  "phrase": "turntable scratches as rhythmic texture",
+  "short": "scratches"
+ },
+ {
+  "id": "glock",
+  "label": "Glockenspiel / boîte à musique",
+  "role": "texture",
+  "phrase": "music-box glockenspiel",
+  "short": "music box"
+ },
+ {
+  "id": "percussion",
+  "label": "Percussions",
+  "role": "support",
+  "phrase": "hand percussion, shakers and congas",
+  "short": "percussion"
+ },
+ {
+  "id": "clavinet",
+  "label": "Clavinet",
+  "role": "support",
+  "phrase": "funky clavinet",
+  "short": "clavinet"
+ }
+]

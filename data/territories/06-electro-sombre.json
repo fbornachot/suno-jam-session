@@ -1,0 +1,192 @@
+{
+  "id": "dark_electro",
+  "label": "Électro sombre / cinématique",
+  "blurb": "Pulsation lente, séquenceurs, synthés analogiques, monde.",
+  "core": [
+    "dark cinematic electronica, slow pulse",
+    "brooding analog electronic music, widescreen and physical"
+  ],
+  "tags": [
+    "dark electronic",
+    "cinematic electronica",
+    "analog synth"
+  ],
+  "exclude": [
+    "big room EDM",
+    "dubstep",
+    "trance"
+  ],
+  "defaults": {
+    "era": "modern_wide",
+    "drums": "electronic_loop",
+    "arc": "hypnosis",
+    "signature": "texture_world",
+    "moods": [
+      "nocturnal",
+      "melancholic"
+    ],
+    "bpm": 90,
+    "key": "F minor",
+    "sliders": {
+      "grain": 50,
+      "saturation": 55,
+      "space": 80,
+      "tension": 65,
+      "hypnosis": 80,
+      "roots": 10,
+      "placement": 85
+    },
+    "instruments": [
+      "synth_pad",
+      "synth_arp",
+      "bass_synth"
+    ]
+  },
+  "grafts": [
+    {
+      "id": "string_quartet",
+      "label": "Quatuor à cordes",
+      "phrase": "a close-miked string quartet with rosin and bow noise"
+    },
+    {
+      "id": "field_rec",
+      "label": "Field recording urbain",
+      "phrase": "faint field recordings, rain and distant city, as a bed"
+    },
+    {
+      "id": "live_band",
+      "label": "Groupe live en relais",
+      "phrase": "a live drummer and bassist gradually taking over from the machine"
+    },
+    {
+      "id": "tracker",
+      "label": "Textures tracker Amiga",
+      "phrase": "low-bit tracker-style arpeggios and crunchy 8-bit sample hits"
+    }
+  ],
+  "far": [
+    {
+      "id": "valve_riff",
+      "label": "Guitare saturée",
+      "phrase": "an overdriven valve-amp guitar riff cutting through the synths"
+    },
+    {
+      "id": "noir_brass",
+      "label": "Cuivres de film noir",
+      "phrase": "muted film-noir brass, smoky and low"
+    },
+    {
+      "id": "gamelan",
+      "label": "Métallophones gamelan",
+      "phrase": "interlocking gamelan metallophones shimmering in the pulse"
+    }
+  ],
+  "extra": [
+    "analog oscillators slightly drifting",
+    "filters opening like slow breathing",
+    "machines with a human heartbeat"
+  ],
+  "presets": [
+    {
+      "id": "goodbye_ache",
+      "label": "Adieu cinématique",
+      "ref": "Goodbye",
+      "note": "Nappes graves, pulsation lente, cordes, gravité.",
+      "set": {
+        "signature": "rise",
+        "arc": "build_explosion",
+        "drums": "electronic_loop",
+        "moods": [
+          "melancholic",
+          "suspended"
+        ],
+        "instruments": [
+          "synth_pad",
+          "strings_section",
+          "piano_felt"
+        ],
+        "bpm": 70,
+        "graft": "string_quartet"
+      },
+      "detail": [
+        "deep slow-motion pads, a muffled heartbeat kick, strings rising in grave silence"
+      ]
+    },
+    {
+      "id": "moroder_drive",
+      "label": "Arpège moteur",
+      "ref": "Giorgio by Moroder",
+      "note": "Séquence analogique infinie, motorik, bascule live.",
+      "set": {
+        "signature": "loop",
+        "drums": "motorik",
+        "arc": "central_break",
+        "moods": [
+          "euphoric",
+          "urgent"
+        ],
+        "instruments": [
+          "synth_arp",
+          "bass_synth",
+          "synth_lead"
+        ],
+        "era": "late70s",
+        "bpm": 112,
+        "graft": "live_band"
+      },
+      "detail": [
+        "an endless sixteenth-note analog sequence, motorik drive, then a live band takes over the machine"
+      ]
+    },
+    {
+      "id": "berlin_amiga",
+      "label": "Berlin × Amiga",
+      "ref": "Tangerine Dream / demoscene",
+      "note": "Séquenceurs Berlin school + arpèges tracker 8-bit.",
+      "set": {
+        "signature": "loop",
+        "arc": "long_form",
+        "drums": "none",
+        "moods": [
+          "dreamlike",
+          "suspended"
+        ],
+        "instruments": [
+          "synth_arp",
+          "synth_pad",
+          "glock"
+        ],
+        "era": "80s_8bit",
+        "graft": "tracker",
+        "bpm": 120
+      },
+      "detail": [
+        "interlocking Berlin-school sequences meeting crunchy four-channel tracker arpeggios, cosmic and nostalgic"
+      ]
+    },
+    {
+      "id": "organic_industrial",
+      "label": "Industriel organique",
+      "ref": "Création",
+      "note": "Percussions métalliques trouvées, synthés qui sifflent, cœur mécanique lent.",
+      "set": {
+        "drums": "hybrid",
+        "signature": "drum_pattern",
+        "moods": [
+          "menacing",
+          "uneasy"
+        ],
+        "instruments": [
+          "synth_pad",
+          "bass_synth",
+          "percussion"
+        ],
+        "graft": "gamelan",
+        "bpm": 96
+      },
+      "detail": [
+        "metallic found-sound percussion, hissing analog synths, a slow mechanical heartbeat"
+      ]
+    }
+  ]
+}

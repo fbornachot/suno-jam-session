@@ -1,0 +1,190 @@
+{
+  "id": "funk_rock",
+  "label": "Funk-rock / groove sale",
+  "blurb": "Basse-batterie soudées, guitare qui griffe, groove physique.",
+  "core": [
+    "dirty funk rock, heavy pocket",
+    "gritty groove rock, bass and drums welded"
+  ],
+  "tags": [
+    "funk rock",
+    "dirty groove",
+    "soul rock"
+  ],
+  "exclude": [
+    "smooth jazz",
+    "disco pop",
+    "jam band"
+  ],
+  "defaults": {
+    "era": "early70s",
+    "drums": "funky_tight",
+    "arc": "central_break",
+    "signature": "bassline",
+    "moods": [
+      "defiant",
+      "sensual"
+    ],
+    "bpm": 100,
+    "key": "A minor",
+    "sliders": {
+      "grain": 75,
+      "saturation": 60,
+      "space": 35,
+      "tension": 50,
+      "hypnosis": 55,
+      "roots": 45,
+      "placement": 50
+    },
+    "instruments": [
+      "bass_finger",
+      "gtr_wah",
+      "clavinet"
+    ]
+  },
+  "grafts": [
+    {
+      "id": "brass_muted",
+      "label": "Trompette sourdine",
+      "phrase": "a muted trumpet line, breathy and distant"
+    },
+    {
+      "id": "fuzz_bass",
+      "label": "Basse fuzz",
+      "phrase": "a fuzzed-out bass that growls through the mix"
+    },
+    {
+      "id": "clav_wah",
+      "label": "Clavinet wah",
+      "phrase": "a clavinet run through a wah pedal, quacking on the off-beats"
+    },
+    {
+      "id": "latin_perc",
+      "label": "Percussions latines",
+      "phrase": "congas and timbales pushing the groove forward"
+    }
+  ],
+  "far": [
+    {
+      "id": "tracker",
+      "label": "Arpèges 8-bit",
+      "phrase": "low-bit tracker-style arpeggios and crunchy 8-bit sample hits"
+    },
+    {
+      "id": "berlin_seq",
+      "label": "Séquenceur analogique",
+      "phrase": "a pulsing analog sequencer locked to the bass"
+    },
+    {
+      "id": "sitar",
+      "label": "Sitar psyché",
+      "phrase": "a droning sitar figure bending over the groove"
+    }
+  ],
+  "extra": [
+    "the pocket sits slightly behind the beat",
+    "sweaty live-room energy",
+    "every rest is part of the groove"
+  ],
+  "presets": [
+    {
+      "id": "why_did_you",
+      "label": "Groove 70s habité",
+      "ref": "Why Did You Do It",
+      "note": "Riff funk-rock 70s, basse en avant, tension soul.",
+      "set": {
+        "signature": "riff",
+        "era": "early70s",
+        "moods": [
+          "defiant",
+          "tense"
+        ],
+        "instruments": [
+          "gtr_crunch",
+          "bass_finger",
+          "organ_hammond"
+        ],
+        "bpm": 104
+      },
+      "detail": [
+        "a strutting seventies funk-rock riff doubled by bass, soulful tension, organ swells"
+      ]
+    },
+    {
+      "id": "short_change",
+      "label": "Western soul massif",
+      "ref": "Short Change Hero",
+      "note": "Groove lent et lourd, cuivres, ambiance western.",
+      "set": {
+        "signature": "drum_pattern",
+        "drums": "massive_simple",
+        "arc": "build_explosion",
+        "moods": [
+          "menacing",
+          "defiant"
+        ],
+        "instruments": [
+          "gtr_crunch",
+          "horns",
+          "bass_pick"
+        ],
+        "bpm": 76,
+        "sliders": {
+          "space": 65
+        }
+      },
+      "detail": [
+        "a slow heavy stomp, spaghetti-western guitar twang, horn blasts at the peaks"
+      ]
+    },
+    {
+      "id": "bloodshot",
+      "label": "Funk électrique",
+      "ref": "Bloodshot Eyes",
+      "note": "Funk nerveux, claviers vintage, grain électrique.",
+      "set": {
+        "signature": "loop",
+        "drums": "hybrid",
+        "moods": [
+          "euphoric",
+          "sensual"
+        ],
+        "instruments": [
+          "clavinet",
+          "synth_lead",
+          "bass_synth"
+        ],
+        "bpm": 108,
+        "era": "timeless"
+      },
+      "detail": [
+        "a jittery clavinet loop, analog synth squelches, funk with electric grit"
+      ]
+    },
+    {
+      "id": "afro_mantra",
+      "label": "Afro-funk hypnotique",
+      "ref": "Création",
+      "note": "Guitares imbriquées, polyrythmie, cuivres répétés comme un mantra.",
+      "set": {
+        "signature": "loop",
+        "arc": "hypnosis",
+        "moods": [
+          "sensual",
+          "urgent"
+        ],
+        "instruments": [
+          "gtr_wah",
+          "horns",
+          "percussion",
+          "bass_finger"
+        ],
+        "graft": "latin_perc",
+        "bpm": 110
+      },
+      "detail": [
+        "interlocking afrobeat guitars, hypnotic polyrhythmic percussion, horn riffs repeating like a mantra"
+      ]
+    }
+  ]
+}

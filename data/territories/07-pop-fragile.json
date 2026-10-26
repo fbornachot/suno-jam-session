@@ -1,0 +1,189 @@
+{
+  "id": "fragile_pop",
+  "label": "Pop fragile, proche",
+  "blurb": "Intime, au creux de l'oreille, retenue qui brûle.",
+  "core": [
+    "intimate fragile pop, close and hushed",
+    "hushed minimal pop, intimacy with tension"
+  ],
+  "tags": [
+    "intimate pop",
+    "minimal",
+    "close-miked"
+  ],
+  "exclude": [
+    "upbeat pop",
+    "coffeehouse acoustic",
+    "EDM"
+  ],
+  "defaults": {
+    "era": "modern_close",
+    "drums": "brushed_soft",
+    "arc": "trigger_entry",
+    "signature": "melody",
+    "moods": [
+      "lonely",
+      "bittersweet"
+    ],
+    "bpm": 72,
+    "key": "G minor",
+    "sliders": {
+      "grain": 70,
+      "saturation": 25,
+      "space": 40,
+      "tension": 55,
+      "hypnosis": 45,
+      "roots": 0,
+      "placement": 40
+    },
+    "instruments": [
+      "piano_felt",
+      "gtr_acoustic",
+      "bass_synth"
+    ]
+  },
+  "grafts": [
+    {
+      "id": "field_rec",
+      "label": "Ambiance de nuit",
+      "phrase": "faint night ambience, distant traffic and room tone"
+    },
+    {
+      "id": "sub_pulse",
+      "label": "Sub qui surgit",
+      "phrase": "a warm sub-bass that surges only at key moments"
+    },
+    {
+      "id": "music_box",
+      "label": "Boîte à musique désaccordée",
+      "phrase": "a slightly detuned music box"
+    },
+    {
+      "id": "tape_warble",
+      "label": "Cassette qui pleure",
+      "phrase": "warbling cassette wow-and-flutter on the whole mix"
+    }
+  ],
+  "far": [
+    {
+      "id": "orient_scale",
+      "label": "Cordes orientales",
+      "phrase": "Eastern-tinged strings with slow slides"
+    },
+    {
+      "id": "baritone",
+      "label": "Guitare baryton twang",
+      "phrase": "a twangy baritone guitar, desert noir"
+    },
+    {
+      "id": "tracker",
+      "label": "Arpèges 8-bit",
+      "phrase": "low-bit tracker-style arpeggios, soft and nostalgic"
+    }
+  ],
+  "extra": [
+    "almost whispered dynamics",
+    "a sub-bass that appears only when needed",
+    "silence held like a breath"
+  ],
+  "presets": [
+    {
+      "id": "i_love_you",
+      "label": "Murmure nocturne",
+      "ref": "I Love You",
+      "note": "Guitare folk au creux de l'oreille, sub discret, fragilité.",
+      "set": {
+        "signature": "melody",
+        "drums": "none",
+        "arc": "hypnosis",
+        "moods": [
+          "bittersweet",
+          "nocturnal"
+        ],
+        "instruments": [
+          "gtr_acoustic",
+          "synth_pad",
+          "bass_synth"
+        ],
+        "graft": "field_rec",
+        "bpm": 66
+      },
+      "detail": [
+        "a tender fingerpicked guitar pressed against the ear, faint night ambience, warm sub swells"
+      ]
+    },
+    {
+      "id": "mad_world",
+      "label": "Piano grave",
+      "ref": "Mad World",
+      "note": "Piano dépouillé, répétition lente, gravité.",
+      "set": {
+        "signature": "melody",
+        "drums": "none",
+        "arc": "hypnosis",
+        "moods": [
+          "melancholic",
+          "lonely"
+        ],
+        "instruments": [
+          "piano_grand",
+          "cello"
+        ],
+        "bpm": 70,
+        "key": "F minor"
+      },
+      "detail": [
+        "a bare repeating piano progression, a cello shadowing the melody, stillness"
+      ]
+    },
+    {
+      "id": "indigo_night",
+      "label": "Nuit indigo",
+      "ref": "Indigo Night",
+      "note": "Guitare et cordes orientales, montée lente et sombre.",
+      "set": {
+        "signature": "texture_world",
+        "arc": "build_explosion",
+        "drums": "room_acoustic",
+        "moods": [
+          "nocturnal",
+          "sensual"
+        ],
+        "instruments": [
+          "gtr_nylon",
+          "strings_section",
+          "bass_upright"
+        ],
+        "graft": "orient_scale",
+        "bpm": 64
+      },
+      "detail": [
+        "a dark nylon guitar figure, Eastern-tinged strings, slowly swelling into a deep nocturnal surge"
+      ]
+    },
+    {
+      "id": "electric_lullaby",
+      "label": "Berceuse électrique",
+      "ref": "Création",
+      "note": "Berceuse piano feutré + boîte à musique, puis une batterie massive change tout.",
+      "set": {
+        "arc": "trigger_entry",
+        "drums": "massive_simple",
+        "moods": [
+          "bittersweet",
+          "tense"
+        ],
+        "instruments": [
+          "piano_felt",
+          "glock",
+          "bass_synth"
+        ],
+        "graft": "music_box",
+        "bpm": 70
+      },
+      "detail": [
+        "a lullaby on felt piano and music box, glitching tape, then a sudden heavy drum entry that changes everything"
+      ]
+    }
+  ]
+}

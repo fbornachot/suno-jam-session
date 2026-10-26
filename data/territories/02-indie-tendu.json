@@ -1,0 +1,192 @@
+{
+  "id": "indie_tense",
+  "label": "Indie rock tendu",
+  "blurb": "Groupe organique, montées longues, mur de guitares.",
+  "core": [
+    "tense indie rock, real band playing together",
+    "organic alternative rock, live band tension"
+  ],
+  "tags": [
+    "indie rock",
+    "alternative rock",
+    "live band"
+  ],
+  "exclude": [
+    "pop punk",
+    "stadium rock",
+    "emo"
+  ],
+  "defaults": {
+    "era": "2000s_indie",
+    "drums": "room_acoustic",
+    "arc": "build_explosion",
+    "signature": "riff",
+    "moods": [
+      "tense",
+      "urgent"
+    ],
+    "bpm": 112,
+    "key": "E minor",
+    "sliders": {
+      "grain": 75,
+      "saturation": 60,
+      "space": 55,
+      "tension": 70,
+      "hypnosis": 45,
+      "roots": 55,
+      "placement": 55
+    },
+    "instruments": [
+      "gtr_crunch",
+      "gtr_clean_delay",
+      "bass_pick"
+    ]
+  },
+  "grafts": [
+    {
+      "id": "organ_psych",
+      "label": "Orgue psyché",
+      "phrase": "a swirling rotary-speaker organ"
+    },
+    {
+      "id": "shoegaze_wall",
+      "label": "Mur shoegaze",
+      "phrase": "a wall of reverse-reverb shoegaze guitars"
+    },
+    {
+      "id": "fuzz_bass",
+      "label": "Basse fuzz",
+      "phrase": "a fuzzed-out bass that growls through the mix"
+    },
+    {
+      "id": "extra_toms",
+      "label": "Toms en renfort",
+      "phrase": "extra floor toms doubling the beat at the peaks"
+    }
+  ],
+  "far": [
+    {
+      "id": "synth_arp",
+      "label": "Arpège analogique",
+      "phrase": "a pulsing analog synth arpeggio under the band"
+    },
+    {
+      "id": "tracker",
+      "label": "Textures tracker Amiga",
+      "phrase": "low-bit tracker-style arpeggios and crunchy 8-bit sample hits"
+    },
+    {
+      "id": "low_brass",
+      "label": "Cuivres graves",
+      "phrase": "low brass swells, brooding and slow"
+    }
+  ],
+  "extra": [
+    "guitars interlocking in dialogue",
+    "drums hit with conviction",
+    "the band breathes as one"
+  ],
+  "presets": [
+    {
+      "id": "big_picture",
+      "label": "Crescendo-fleuve",
+      "ref": "Big Picture",
+      "note": "Très longue montée, guitares qui s'empilent, explosion libératrice.",
+      "set": {
+        "arc": "build_explosion",
+        "signature": "rise",
+        "moods": [
+          "melancholic",
+          "urgent"
+        ],
+        "instruments": [
+          "gtr_clean_delay",
+          "gtr_crunch",
+          "piano_grand"
+        ],
+        "bpm": 96,
+        "sliders": {
+          "space": 70,
+          "roots": 65
+        }
+      },
+      "detail": [
+        "a single clean guitar figure slowly joined by layers until a wall of saturated guitars and crashing cymbals"
+      ]
+    },
+    {
+      "id": "angel_death",
+      "label": "Dense et dramatique",
+      "ref": "Angel of Death",
+      "note": "Dynamiques extrêmes, basse lourde, tension dramatique.",
+      "set": {
+        "arc": "calm_violence",
+        "drums": "tribal_toms",
+        "moods": [
+          "tense",
+          "uneasy"
+        ],
+        "instruments": [
+          "gtr_fuzz",
+          "bass_pick",
+          "synth_pad"
+        ],
+        "bpm": 84,
+        "sliders": {
+          "tension": 85,
+          "saturation": 75
+        }
+      },
+      "detail": [
+        "dense heavy guitars, pounding toms, fragile passages that collapse into weight"
+      ]
+    },
+    {
+      "id": "days_forgotten",
+      "label": "Stomp psyché",
+      "ref": "Days Are Forgotten",
+      "note": "Groove martelé, fuzz, couleur psychédélique.",
+      "set": {
+        "signature": "drum_pattern",
+        "drums": "massive_simple",
+        "moods": [
+          "defiant",
+          "urgent"
+        ],
+        "instruments": [
+          "gtr_fuzz",
+          "bass_pick",
+          "organ_hammond"
+        ],
+        "graft": "organ_psych",
+        "bpm": 118
+      },
+      "detail": [
+        "a stomping swaggering beat, fuzz riffs with a psychedelic tint, crowd-in-a-room energy"
+      ]
+    },
+    {
+      "id": "odd_meter",
+      "label": "Indie asymétrique",
+      "ref": "Création",
+      "note": "Figure de guitare en 7 temps, batterie sur les contretemps, tension jamais résolue.",
+      "set": {
+        "signature": "drum_pattern",
+        "arc": "central_break",
+        "moods": [
+          "tense",
+          "uneasy"
+        ],
+        "instruments": [
+          "gtr_clean_delay",
+          "gtr_crunch",
+          "bass_pick"
+        ],
+        "bpm": 126
+      },
+      "detail": [
+        "an odd-meter guitar figure in seven, drums accenting the off-beats, tension that never settles"
+      ]
+    }
+  ]
+}

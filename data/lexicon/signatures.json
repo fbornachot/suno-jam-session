@@ -1,0 +1,65 @@
+[
+ {
+  "id": "riff",
+  "label": "Riff",
+  "phrase": [
+   "built around one instantly memorable guitar riff that returns as the main hook",
+   "a single sticky riff carries the whole track"
+  ],
+  "short": "main riff"
+ },
+ {
+  "id": "bassline",
+  "label": "Ligne de basse",
+  "phrase": [
+   "built around a menacing, memorable bassline that leads the track",
+   "an unforgettable bass figure is the hook"
+  ],
+  "short": "bassline"
+ },
+ {
+  "id": "drum_pattern",
+  "label": "Pattern batterie",
+  "phrase": [
+   "the drum pattern itself is the hook, recognizable from the first bar",
+   "a signature drum groove you recognize instantly"
+  ],
+  "short": "drum groove"
+ },
+ {
+  "id": "loop",
+  "label": "Boucle",
+  "phrase": [
+   "built around a short hypnotic loop that never lets go",
+   "one magnetic loop repeated until it becomes a world"
+  ],
+  "short": "loop"
+ },
+ {
+  "id": "rise",
+  "label": "Montée",
+  "phrase": [
+   "the hook is the rise itself, a tension curve you want to hear again",
+   "memorability comes from the build and its release"
+  ],
+  "short": "rising motif"
+ },
+ {
+  "id": "texture_world",
+  "label": "Texture-monde",
+  "phrase": [
+   "an immediately recognizable sound-world, a texture that announces a place",
+   "a distinctive sonic environment is the hook from second one"
+  ],
+  "short": "sound-world"
+ },
+ {
+  "id": "melody",
+  "label": "Motif mélodique",
+  "phrase": [
+   "a simple magnetic melodic motif, few notes, the right sound",
+   "a short lead motif with a unique timbre, voiced by one instrument"
+  ],
+  "short": "lead motif"
+ }
+]

@@ -1,0 +1,187 @@
+{
+  "id": "offbeat_pop",
+  "label": "Pop efficace non standard",
+  "blurb": "Prise immédiate, énergie, mais jamais formatée.",
+  "core": [
+    "punchy offbeat pop, immediate and physical",
+    "high-energy alternative pop, quirky and direct"
+  ],
+  "tags": [
+    "alternative pop",
+    "dance rock",
+    "offbeat"
+  ],
+  "exclude": [
+    "bubblegum pop",
+    "tropical house",
+    "EDM"
+  ],
+  "defaults": {
+    "era": "timeless",
+    "drums": "hybrid",
+    "arc": "trigger_entry",
+    "signature": "drum_pattern",
+    "moods": [
+      "euphoric",
+      "defiant"
+    ],
+    "bpm": 122,
+    "key": "B minor",
+    "sliders": {
+      "grain": 60,
+      "saturation": 60,
+      "space": 45,
+      "tension": 45,
+      "hypnosis": 55,
+      "roots": 40,
+      "placement": 70
+    },
+    "instruments": [
+      "bass_slap",
+      "gtr_wah",
+      "synth_lead"
+    ]
+  },
+  "grafts": [
+    {
+      "id": "fuzz_bass",
+      "label": "Basse fuzz",
+      "phrase": "a fuzzed-out bass that growls through the mix"
+    },
+    {
+      "id": "horn_stabs",
+      "label": "Cuivres fanfare",
+      "phrase": "brass-band horn hits on the accents"
+    },
+    {
+      "id": "claps",
+      "label": "Claps géants",
+      "phrase": "huge handclaps and foot stomps on the backbeat"
+    },
+    {
+      "id": "disco_gtr",
+      "label": "Guitare disco",
+      "phrase": "a choppy disco rhythm guitar"
+    }
+  ],
+  "far": [
+    {
+      "id": "tracker",
+      "label": "Arpèges 8-bit",
+      "phrase": "low-bit tracker-style arpeggios and crunchy 8-bit sample hits"
+    },
+    {
+      "id": "string_quartet",
+      "label": "Quatuor à cordes",
+      "phrase": "a close-miked string quartet playing staccato"
+    },
+    {
+      "id": "maqam",
+      "label": "Mode oriental",
+      "phrase": "a lead line in a Middle-Eastern maqam mode"
+    }
+  ],
+  "extra": [
+    "a body-moving bounce",
+    "hooks made of rhythm, not melody",
+    "fun with an edge"
+  ],
+  "presets": [
+    {
+      "id": "positive_fff",
+      "label": "Funk-fusion fiévreux",
+      "ref": "Positive",
+      "note": "Slap, cuivres, énergie live débordante.",
+      "set": {
+        "signature": "bassline",
+        "drums": "funky_tight",
+        "moods": [
+          "euphoric",
+          "urgent"
+        ],
+        "instruments": [
+          "bass_slap",
+          "horns",
+          "gtr_wah"
+        ],
+        "bpm": 116,
+        "era": "90s_live"
+      },
+      "detail": [
+        "feverish slap-bass funk with horn blasts, a sweaty crowd-surfing energy"
+      ]
+    },
+    {
+      "id": "picky",
+      "label": "Électro-rock rebondi",
+      "ref": "I'm Picky",
+      "note": "Riff élastique, beat rebondi, guitare-synthé.",
+      "set": {
+        "signature": "riff",
+        "drums": "hybrid",
+        "moods": [
+          "defiant",
+          "euphoric"
+        ],
+        "instruments": [
+          "gtr_crunch",
+          "bass_synth",
+          "synth_lead"
+        ],
+        "bpm": 124
+      },
+      "detail": [
+        "an elastic bouncing riff traded between guitar and synth, a stomping dance-rock beat"
+      ]
+    },
+    {
+      "id": "jumpsuit",
+      "label": "Basse paranoïaque",
+      "ref": "Jumpsuit",
+      "note": "Basse saturée, tension, explosion soudaine.",
+      "set": {
+        "signature": "bassline",
+        "arc": "calm_violence",
+        "drums": "massive_simple",
+        "moods": [
+          "uneasy",
+          "urgent"
+        ],
+        "instruments": [
+          "bass_pick",
+          "synth_pad",
+          "gtr_feedback"
+        ],
+        "graft": "fuzz_bass",
+        "bpm": 120
+      },
+      "detail": [
+        "a paranoid fuzzed bass riff, tense quiet verses, a sudden pounding release"
+      ]
+    },
+    {
+      "id": "surf_nervous",
+      "label": "Surf-pop nerveux",
+      "ref": "Création",
+      "note": "Riff surf frénétique, beat dansant rebondi, claps et orgue.",
+      "set": {
+        "drums": "funky_tight",
+        "signature": "riff",
+        "moods": [
+          "euphoric",
+          "urgent"
+        ],
+        "instruments": [
+          "gtr_clean_delay",
+          "organ_hammond",
+          "bass_pick"
+        ],
+        "graft": "claps",
+        "bpm": 138
+      },
+      "detail": [
+        "a frantic surf-guitar riff over a bouncing dance beat, handclaps and organ stabs"
+      ]
+    }
+  ]
+}

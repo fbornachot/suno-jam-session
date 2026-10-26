@@ -1,0 +1,16 @@
+[
+  { "id": "melancholic", "label": "Mélancolique", "phrase": "melancholic" },
+  { "id": "tense", "label": "Tendu", "phrase": "tense, holding its breath" },
+  { "id": "menacing", "label": "Menaçant", "phrase": "quietly menacing" },
+  { "id": "nocturnal", "label": "Nocturne", "phrase": "nocturnal" },
+  { "id": "dreamlike", "label": "Onirique", "phrase": "dreamlike, slightly unreal" },
+  { "id": "sensual", "label": "Sensuel", "phrase": "sensual, physical" },
+  { "id": "urgent", "label": "Urgent", "phrase": "urgent" },
+  { "id": "consoling", "label": "Consolant", "phrase": "consoling, warm" },
+  { "id": "uneasy", "label": "Malaise", "phrase": "uneasy, off-balance" },
+  { "id": "defiant", "label": "Défiant", "phrase": "defiant, swaggering" },
+  { "id": "suspended", "label": "Suspendu", "phrase": "suspended in time" },
+  { "id": "bittersweet", "label": "Doux-amer", "phrase": "bittersweet" },
+  { "id": "euphoric", "label": "Euphorie retenue", "phrase": "restrained euphoria" },
+  { "id": "lonely", "label": "Solitude", "phrase": "lonely, distant" }
+]

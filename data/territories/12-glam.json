@@ -1,0 +1,196 @@
+{
+  "id": "glam_rock",
+  "label": "Glam rock",
+  "blurb": "Stomp, paillettes, fuzz, théâtralité 70s.",
+  "core": [
+    "glam rock, stomping and flamboyant",
+    "seventies glam rock, swaggering boogie stomp"
+  ],
+  "tags": [
+    "glam rock",
+    "70s rock",
+    "boogie"
+  ],
+  "exclude": [
+    "hair metal",
+    "punk",
+    "pub rock"
+  ],
+  "defaults": {
+    "era": "early70s",
+    "drums": "massive_simple",
+    "arc": "central_break",
+    "signature": "riff",
+    "moods": [
+      "defiant",
+      "euphoric"
+    ],
+    "bpm": 120,
+    "key": "A major",
+    "sliders": {
+      "grain": 65,
+      "saturation": 70,
+      "space": 50,
+      "tension": 45,
+      "hypnosis": 50,
+      "roots": 55,
+      "placement": 55
+    },
+    "instruments": [
+      "gtr_fuzz",
+      "piano_grand",
+      "bass_pick"
+    ]
+  },
+  "grafts": [
+    {
+      "id": "handclaps",
+      "label": "Handclaps & stomps",
+      "phrase": "big handclaps and foot stomps on the backbeat"
+    },
+    {
+      "id": "guitar_orchestra",
+      "label": "Guitares harmonisées",
+      "phrase": "multi-tracked harmonized lead guitars like a small orchestra"
+    },
+    {
+      "id": "backwards",
+      "label": "Guitare à l'envers",
+      "phrase": "reversed guitar swells breathing between phrases"
+    },
+    {
+      "id": "bari_sax",
+      "label": "Sax baryton rugueux",
+      "phrase": "a honking baritone saxophone doubling the riff"
+    }
+  ],
+  "far": [
+    {
+      "id": "tracker",
+      "label": "Arpèges 8-bit",
+      "phrase": "low-bit tracker-style arpeggios sparkling over the stomp"
+    },
+    {
+      "id": "string_quartet",
+      "label": "Quatuor de chambre",
+      "phrase": "a close-miked string quartet with rosin and bow noise"
+    },
+    {
+      "id": "sub_pulse",
+      "label": "Sub électronique",
+      "phrase": "a deep electronic sub-bass pulse under the band"
+    }
+  ],
+  "extra": [
+    "glitter and swagger in every hit",
+    "the riff struts like a catwalk",
+    "showmanship that stays physical"
+  ],
+  "presets": [
+    {
+      "id": "boogie_stomp",
+      "label": "Boogie stomp",
+      "ref": "T. Rex",
+      "note": "Riff boogie fuzz, claps, toms qui martèlent, swagger.",
+      "set": {
+        "signature": "riff",
+        "drums": "massive_simple",
+        "moods": [
+          "defiant",
+          "sensual"
+        ],
+        "instruments": [
+          "gtr_fuzz",
+          "bass_pick",
+          "percussion"
+        ],
+        "graft": "handclaps",
+        "bpm": 116
+      },
+      "detail": [
+        "a strutting boogie riff on fuzz guitar, handclaps and stomping floor toms, glitter swagger"
+      ]
+    },
+    {
+      "id": "rock_opera",
+      "label": "Opéra rock",
+      "ref": "Bohemian Rhapsody",
+      "note": "Ouverture piano-ballade, guitares harmonisées, bascule rock soudaine.",
+      "set": {
+        "signature": "melody",
+        "arc": "long_form",
+        "drums": "room_acoustic",
+        "moods": [
+          "melancholic",
+          "defiant"
+        ],
+        "instruments": [
+          "piano_grand",
+          "gtr_lead_solo",
+          "bass_finger"
+        ],
+        "graft": "guitar_orchestra",
+        "era": "late70s",
+        "bpm": 72
+      },
+      "detail": [
+        "a piano ballad opening, layered harmonized lead guitars, a sudden heavy rock section, theatrical shifts of mood"
+      ]
+    },
+    {
+      "id": "glam_psych",
+      "label": "Psychedelic",
+      "ref": "Glam psyché 69–72",
+      "note": "Douze-cordes phasées, guitares à l'envers, mellotron, brume.",
+      "set": {
+        "signature": "texture_world",
+        "arc": "trigger_entry",
+        "drums": "room_acoustic",
+        "era": "late60s",
+        "moods": [
+          "dreamlike",
+          "euphoric"
+        ],
+        "instruments": [
+          "gtr_phaser",
+          "mellotron",
+          "bass_finger"
+        ],
+        "graft": "backwards",
+        "bpm": 104,
+        "sliders": {
+          "space": 75,
+          "hypnosis": 65
+        }
+      },
+      "detail": [
+        "phased twelve-string guitars, backwards guitar swells, mellotron flutes, a dreamy glam haze"
+      ]
+    },
+    {
+      "id": "neon_glam",
+      "label": "Glam néon motorik",
+      "ref": "Création",
+      "note": "Riff glam calé sur une pulsation motorik, lead synthé analogique.",
+      "set": {
+        "signature": "riff",
+        "drums": "motorik",
+        "era": "80s_newwave",
+        "moods": [
+          "euphoric",
+          "urgent"
+        ],
+        "instruments": [
+          "gtr_fuzz",
+          "synth_lead",
+          "bass_pick"
+        ],
+        "graft": "handclaps",
+        "bpm": 128
+      },
+      "detail": [
+        "a glam stomp riff locked to a relentless motorik pulse, a bright analog synth lead strutting on top"
+      ]
+    }
+  ]
+}

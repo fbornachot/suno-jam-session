@@ -1,0 +1,91 @@
+{
+ "voiceRoom": "Arrangement keeps open midrange space, sparse lead lines.",
+ "closer": [
+  "Mix with physical presence and human friction, characterful drums, bass with weight.",
+  "Sound with identity and grain, drums with character, groove with a real engine."
+ ],
+ "fillers": [
+  "every part has a reason to exist",
+  "transients kept alive, dynamics breathing",
+  "instruments in dialogue rather than stacked",
+  "bass and drums locked as one engine",
+  "texture matters more than notes",
+  "tone before speed",
+  "the first seconds promise something",
+  "space between the notes",
+  "a sound you want to hear again"
+ ],
+ "banned": [
+  {
+   "pattern": "\\bmetal\\b",
+   "reason": "Metal = racine, pas destination"
+  },
+  {
+   "pattern": "heavy metal|thrash|double[- ]kick|blast ?beat|shred",
+   "reason": "Vocabulaire metal frontal"
+  },
+  {
+   "pattern": "anthemic|epic|emotional",
+   "reason": "Pousse vers le pathos fabriqué / climax générique"
+  },
+  {
+   "pattern": "radio[- ]friendly|polished pop|catchy chorus",
+   "reason": "Anti-attracteur : trop lisse"
+  },
+  {
+   "pattern": "trailer|stock music|corporate",
+   "reason": "Anti-attracteur : générique"
+  },
+  {
+   "pattern": "virtuos|showcase|technical solo",
+   "reason": "Virtuosité démonstrative"
+  },
+  {
+   "pattern": "\\bsing(ing|er|s)?\\b|\\bsung\\b|lyrics|vocalist|\\bvocal\\b|\\bvoice\\b",
+   "reason": "Risque d'appeler du chant"
+  },
+  {
+   "pattern": "\\binstrumental\\b",
+   "reason": "Déjà porté par [Instrumental] dans Lyrics"
+  },
+  {
+   "pattern": "operatic|\\bchoir\\b|\\bchant",
+   "reason": "Risque d'appeler du chant"
+  }
+ ],
+ "artistGuard": [
+  "Portishead",
+  "Massive Attack",
+  "Pink Floyd",
+  "Muse",
+  "Radiohead",
+  "Daft Punk",
+  "Agnes Obel",
+  "Billie Eilish",
+  "Faith No More",
+  "Last Train",
+  "Manchester Orchestra",
+  "Keane",
+  "Stretch",
+  "Apparat",
+  "Max Richter",
+  "Cinematic Orchestra",
+  "Deep Purple",
+  "Arctic Monkeys",
+  "Mars Volta",
+  "Kasabian",
+  "Tamino",
+  "Jay-Jay Johanson",
+  "The Heavy",
+  "General Elektriks",
+  "Al Green",
+  "Jackson 5",
+  "Kendra Morris",
+  "Shaka",
+  "Twenty One Pilots",
+  "FFF",
+  "Moroder",
+  "Tangerine Dream"
+ ],
+ "closerNoDrums": "Sound with identity and grain, every texture physical and close, pulse with a real engine."
+}

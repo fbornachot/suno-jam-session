@@ -1,0 +1,189 @@
+{
+  "id": "rock_drama",
+  "label": "Rock dramatique théâtral",
+  "blurb": "Théâtralité habitée, ruptures, excès maîtrisé — sans metal.",
+  "core": [
+    "dramatic theatrical rock, bold dynamics",
+    "theatrical art rock, tension and release"
+  ],
+  "tags": [
+    "art rock",
+    "dramatic rock",
+    "theatrical"
+  ],
+  "exclude": [
+    "power metal",
+    "symphonic metal",
+    "musical theatre"
+  ],
+  "defaults": {
+    "era": "90s_live",
+    "drums": "room_acoustic",
+    "arc": "calm_violence",
+    "signature": "riff",
+    "moods": [
+      "tense",
+      "defiant"
+    ],
+    "bpm": 104,
+    "key": "C# minor",
+    "sliders": {
+      "grain": 65,
+      "saturation": 65,
+      "space": 60,
+      "tension": 80,
+      "hypnosis": 30,
+      "roots": 70,
+      "placement": 60
+    },
+    "instruments": [
+      "gtr_crunch",
+      "piano_grand",
+      "bass_pick"
+    ]
+  },
+  "grafts": [
+    {
+      "id": "fusion_drums",
+      "label": "Interaction jazz-rock",
+      "phrase": "jazz-rock drum-and-bass interplay, displaced accents, conversational fills"
+    },
+    {
+      "id": "string_quartet",
+      "label": "Quatuor à cordes",
+      "phrase": "a close-miked string quartet with rosin and bow noise"
+    },
+    {
+      "id": "mellotron_flutes",
+      "label": "Flûtes mellotron",
+      "phrase": "wobbly mellotron flutes haunting the quiet parts"
+    },
+    {
+      "id": "valve_amp",
+      "label": "Ampli poussé",
+      "phrase": "an overdriven British valve-amp guitar adds bite and physical attack"
+    }
+  ],
+  "far": [
+    {
+      "id": "tracker",
+      "label": "Arpèges 8-bit",
+      "phrase": "low-bit tracker-style arpeggios and crunchy 8-bit sample hits"
+    },
+    {
+      "id": "maqam",
+      "label": "Mode oriental",
+      "phrase": "a lead line in a Middle-Eastern maqam mode, quarter-tone bends"
+    },
+    {
+      "id": "harpsichord_cp",
+      "label": "Contrepoint clavecin",
+      "phrase": "dry baroque harpsichord counterpoint against the band"
+    }
+  ],
+  "extra": [
+    "theatrical gestures that stay physical",
+    "sudden stops and restarts",
+    "staged like a play in three acts"
+  ],
+  "presets": [
+    {
+      "id": "morning_after",
+      "label": "Tension nerveuse",
+      "ref": "The Morning After",
+      "note": "Groove nerveux, basse claquante, claviers dramatiques.",
+      "set": {
+        "signature": "bassline",
+        "drums": "funky_tight",
+        "moods": [
+          "uneasy",
+          "defiant"
+        ],
+        "instruments": [
+          "bass_pick",
+          "gtr_crunch",
+          "piano_grand"
+        ],
+        "graft": "fusion_drums",
+        "bpm": 120
+      },
+      "detail": [
+        "a nervous jittery groove, slapping bass driving, dramatic piano stabs over crunchy guitar"
+      ]
+    },
+    {
+      "id": "shrinking_universe",
+      "label": "Grandiose sombre",
+      "ref": "Shrinking Universe",
+      "note": "Piano dramatique, synthés, montée grandiose et sombre.",
+      "set": {
+        "arc": "build_explosion",
+        "signature": "melody",
+        "moods": [
+          "melancholic",
+          "tense"
+        ],
+        "instruments": [
+          "piano_grand",
+          "synth_arp",
+          "gtr_crunch"
+        ],
+        "era": "modern_wide",
+        "bpm": 92
+      },
+      "detail": [
+        "dramatic classical-tinged piano figures, analog arpeggios, a dark grand ascent"
+      ]
+    },
+    {
+      "id": "widow_drama",
+      "label": "Ballade incendiée",
+      "ref": "The Widow",
+      "note": "Ballade lente qui brûle, guitares hurlantes, chaos final.",
+      "set": {
+        "arc": "calm_violence",
+        "signature": "rise",
+        "drums": "room_acoustic",
+        "moods": [
+          "lonely",
+          "urgent"
+        ],
+        "instruments": [
+          "gtr_lead_solo",
+          "gtr_feedback",
+          "organ_hammond"
+        ],
+        "bpm": 72,
+        "sliders": {
+          "space": 75
+        }
+      },
+      "detail": [
+        "a slow burning ballad shape, a crying guitar lead, collapsing into a feedback storm"
+      ]
+    },
+    {
+      "id": "gothic_western",
+      "label": "Western gothique",
+      "ref": "Création",
+      "note": "Duel au soleil noir : guitare baryton trémolo, toms martelés, orgue.",
+      "set": {
+        "drums": "tribal_toms",
+        "arc": "build_explosion",
+        "moods": [
+          "menacing",
+          "defiant"
+        ],
+        "instruments": [
+          "gtr_crunch",
+          "organ_hammond",
+          "bass_pick"
+        ],
+        "bpm": 88
+      },
+      "detail": [
+        "a gothic western standoff, tremolo baritone guitar, pounding toms, organ drones closing in"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "id": "trip_hop",
+  "label": "Trip-hop sombre",
+  "blurb": "Boucle lourde, basse menaçante, grain de sampler, nuit.",
+  "core": [
+    "dark trip-hop, slow heavy groove",
+    "brooding downtempo trip-hop, dusty and noir"
+  ],
+  "tags": [
+    "dark trip-hop",
+    "downtempo",
+    "noir"
+  ],
+  "exclude": [
+    "lo-fi chillhop",
+    "jazzhop",
+    "EDM"
+  ],
+  "defaults": {
+    "era": "90s_analog",
+    "drums": "breakbeat_dirty",
+    "arc": "hypnosis",
+    "signature": "bassline",
+    "moods": [
+      "nocturnal",
+      "menacing"
+    ],
+    "bpm": 78,
+    "key": "D minor",
+    "sliders": {
+      "grain": 70,
+      "saturation": 60,
+      "space": 65,
+      "tension": 75,
+      "hypnosis": 75,
+      "roots": 10,
+      "placement": 35
+    },
+    "instruments": [
+      "bass_synth",
+      "rhodes",
+      "turntable"
+    ]
+  },
+  "grafts": [
+    {
+      "id": "theremin",
+      "label": "Lead éthéré",
+      "phrase": "a wavering theremin-like lead, eerie and ghostly"
+    },
+    {
+      "id": "spy_surf",
+      "label": "Guitare d'espion",
+      "phrase": "a reverb-drenched spy-film twang guitar with tremolo picking"
+    },
+    {
+      "id": "scratch_vinyl",
+      "label": "Vinyle griffé",
+      "phrase": "scratched and pitched-down vinyl fragments as rhythmic punctuation"
+    },
+    {
+      "id": "cold_strings",
+      "label": "Cordes de film glacées",
+      "phrase": "cold sampled string stabs lifted from an old film score"
+    }
+  ],
+  "far": [
+    {
+      "id": "berlin_seq",
+      "label": "Séquenceur Berlin school",
+      "phrase": "a pulsing Berlin-school analog sequencer running underneath"
+    },
+    {
+      "id": "valve_riff",
+      "label": "Riff saturé à lampes",
+      "phrase": "an overdriven valve-amp guitar riff tearing through the haze"
+    },
+    {
+      "id": "maqam",
+      "label": "Mode oriental",
+      "phrase": "a lead line in a Middle-Eastern maqam mode, quarter-tone bends"
+    }
+  ],
+  "extra": [
+    "vinyl crackle under everything",
+    "sampler pitch-down artifacts",
+    "low end heavy and slow"
+  ],
+  "presets": [
+    {
+      "id": "sour_noir",
+      "label": "Spy noir",
+      "ref": "Sour Times",
+      "note": "Guitare d'espion en boucle, vinyle griffé, lead éthéré.",
+      "set": {
+        "signature": "loop",
+        "era": "90s_analog",
+        "moods": [
+          "melancholic",
+          "nocturnal"
+        ],
+        "instruments": [
+          "gtr_clean_delay",
+          "bass_finger",
+          "turntable"
+        ],
+        "graft": "theremin"
+      },
+      "detail": [
+        "a looped reverb-soaked spy-film guitar figure, scratched vinyl texture, eerie wavering lead"
+      ]
+    },
+    {
+      "id": "angel_menace",
+      "label": "Menace lente",
+      "ref": "Angel",
+      "note": "Basse menaçante, montée lente vers guitares saturées.",
+      "set": {
+        "signature": "bassline",
+        "arc": "build_explosion",
+        "drums": "massive_simple",
+        "moods": [
+          "menacing",
+          "tense"
+        ],
+        "instruments": [
+          "bass_synth",
+          "gtr_fuzz",
+          "synth_pad"
+        ],
+        "sliders": {
+          "roots": 55,
+          "tension": 85
+        }
+      },
+      "detail": [
+        "a menacing two-note bassline circling, distorted guitars arriving only at the peak"
+      ]
+    },
+    {
+      "id": "lounge_noir",
+      "label": "Lounge glacé",
+      "ref": "Not Time Yet",
+      "note": "Noir feutré, cordes froides, groove paresseux.",
+      "set": {
+        "signature": "texture_world",
+        "drums": "brushed_soft",
+        "moods": [
+          "lonely",
+          "suspended"
+        ],
+        "instruments": [
+          "strings_section",
+          "piano_felt",
+          "bass_upright"
+        ],
+        "sliders": {
+          "tension": 55,
+          "space": 75
+        }
+      },
+      "detail": [
+        "cold cinematic lounge strings, a lazy noir groove, smoke-filled late-night bar"
+      ]
+    },
+    {
+      "id": "desert_noir",
+      "label": "Noir désertique",
+      "ref": "Création",
+      "note": "Beat cassé lent, guitare baryton twang, dub delays brûlants.",
+      "set": {
+        "signature": "texture_world",
+        "moods": [
+          "uneasy",
+          "suspended"
+        ],
+        "instruments": [
+          "gtr_clean_delay",
+          "bass_upright",
+          "synth_pad"
+        ],
+        "graft": "spy_surf",
+        "bpm": 74
+      },
+      "detail": [
+        "a slow broken beat under a twangy baritone guitar, dub delays dissolving into desert heat"
+      ]
+    }
+  ]
+}

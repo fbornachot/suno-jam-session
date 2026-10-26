@@ -1,0 +1,193 @@
+{
+  "id": "psych_longform",
+  "label": "Psyché planant / formes longues",
+  "blurb": "Nappes, espace, longues dérives, transe.",
+  "core": [
+    "spacious psychedelic rock, long evolving form",
+    "floating space rock, patient and vast"
+  ],
+  "tags": [
+    "psychedelic rock",
+    "space rock",
+    "long form"
+  ],
+  "exclude": [
+    "jam band",
+    "new age",
+    "ambient drone"
+  ],
+  "defaults": {
+    "era": "late70s",
+    "drums": "room_acoustic",
+    "arc": "long_form",
+    "signature": "texture_world",
+    "moods": [
+      "dreamlike",
+      "suspended"
+    ],
+    "bpm": 68,
+    "key": "C# minor",
+    "sliders": {
+      "grain": 55,
+      "saturation": 45,
+      "space": 90,
+      "tension": 55,
+      "hypnosis": 70,
+      "roots": 25,
+      "placement": 30
+    },
+    "instruments": [
+      "gtr_clean_delay",
+      "organ_hammond",
+      "synth_pad"
+    ]
+  },
+  "grafts": [
+    {
+      "id": "tape_loops",
+      "label": "Boucles de bande",
+      "phrase": "warped tape loops and wow-and-flutter drifting in and out"
+    },
+    {
+      "id": "theremin",
+      "label": "Lead éthéré",
+      "phrase": "a wavering theremin-like lead, eerie and ghostly"
+    },
+    {
+      "id": "sitar_drone",
+      "label": "Sitar & tanpura",
+      "phrase": "a sitar figure over a tanpura drone"
+    },
+    {
+      "id": "slide",
+      "label": "Slide lointaine",
+      "phrase": "a lap-steel slide guitar gliding in the distance"
+    }
+  ],
+  "far": [
+    {
+      "id": "berlin_seq",
+      "label": "Séquenceur Berlin school",
+      "phrase": "a pulsing Berlin-school analog sequencer running underneath"
+    },
+    {
+      "id": "tracker",
+      "label": "Textures tracker Amiga",
+      "phrase": "low-bit tracker-style arpeggios and crunchy 8-bit sample hits"
+    },
+    {
+      "id": "sub_pulse",
+      "label": "Sub électronique",
+      "phrase": "a deep electronic sub-bass pulse under the organic band"
+    }
+  ],
+  "extra": [
+    "sounds drifting across the stereo field",
+    "patience as a musical force",
+    "the room itself is an instrument"
+  ],
+  "presets": [
+    {
+      "id": "echoes_drift",
+      "label": "Dérive océanique",
+      "ref": "Echoes",
+      "note": "Ping sonar, nappes, longue dérive puis retour du thème.",
+      "set": {
+        "signature": "melody",
+        "arc": "long_form",
+        "moods": [
+          "dreamlike",
+          "lonely"
+        ],
+        "instruments": [
+          "piano_grand",
+          "gtr_clean_delay",
+          "organ_hammond"
+        ],
+        "graft": "tape_loops",
+        "bpm": 62
+      },
+      "detail": [
+        "a single echoing piano ping like sonar, slow organ swells, an oceanic drifting middle section"
+      ]
+    },
+    {
+      "id": "child_in_time",
+      "label": "Montée organique",
+      "ref": "Child in Time",
+      "note": "Orgue hypnotique, longue montée vers la tempête.",
+      "set": {
+        "arc": "build_explosion",
+        "signature": "rise",
+        "moods": [
+          "tense",
+          "suspended"
+        ],
+        "instruments": [
+          "organ_hammond",
+          "gtr_crunch",
+          "bass_finger"
+        ],
+        "era": "early70s",
+        "sliders": {
+          "roots": 60
+        }
+      },
+      "detail": [
+        "a hypnotic organ figure over a slow pulse, rising into a frantic storm of organ and guitar"
+      ]
+    },
+    {
+      "id": "tranquility_lounge",
+      "label": "Lounge rétro-futur",
+      "ref": "Tranquility Base",
+      "note": "Lounge psyché, piano feutré, groove lent et étrange.",
+      "set": {
+        "signature": "texture_world",
+        "drums": "brushed_soft",
+        "moods": [
+          "dreamlike",
+          "uneasy"
+        ],
+        "instruments": [
+          "piano_felt",
+          "bass_finger",
+          "vibraphone"
+        ],
+        "era": "late70s",
+        "bpm": 82,
+        "sliders": {
+          "space": 60
+        }
+      },
+      "detail": [
+        "a retro-futurist lounge, slinky piano, a lunar hotel bar at closing time"
+      ]
+    },
+    {
+      "id": "kraut_desert",
+      "label": "Krautrock désertique",
+      "ref": "Création",
+      "note": "Pulsation motorik, slide guitar qui dérive sur l'horizon.",
+      "set": {
+        "drums": "motorik",
+        "arc": "hypnosis",
+        "signature": "loop",
+        "moods": [
+          "suspended",
+          "lonely"
+        ],
+        "instruments": [
+          "gtr_clean_delay",
+          "bass_pick",
+          "synth_pad"
+        ],
+        "graft": "slide",
+        "bpm": 118
+      },
+      "detail": [
+        "a motorik pulse under slide guitar drifting over a desert horizon, heat haze in the reverbs"
+      ]
+    }
+  ]
+}
