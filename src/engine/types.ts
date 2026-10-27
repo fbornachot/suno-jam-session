@@ -4,7 +4,7 @@ export type Phrase = string | string[];
 export type SliderId = 'grain' | 'saturation' | 'space' | 'tension' | 'hypnosis' | 'roots' | 'placement';
 export const SLIDER_IDS: SliderId[] = ['grain', 'saturation', 'space', 'tension', 'hypnosis', 'roots', 'placement'];
 
-export interface LexItem { id: string; label: string; phrase: Phrase; short?: string }
+export interface LexItem { id: string; label: string; phrase: Phrase; short?: string; interaction?: { subtle: string; structural: string; role: string; requires?: string[] } }
 export interface Arc extends LexItem { tags: string[] }
 export interface Instrument extends LexItem { role: 'lead' | 'support' | 'low' | 'texture'; solo?: string }
 export interface Bucket { max: number; phrase: string }
@@ -82,4 +82,15 @@ export interface Output {
   structure: string;
   exclude: string;
   lint: LintIssue[];
+  blocks: CompiledBlock[];
+  changes: string[];
+  discovery: string | null;
+}
+
+export interface CompiledBlock {
+  key: string;
+  label: string;
+  text: string;
+  status: 'kept' | 'dropped' | 'incompatible' | 'structure';
+  reason?: string;
 }

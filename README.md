@@ -133,4 +133,8 @@ Aucune licence de redistribution n'est ajoutée à ce stade ; son choix reste à
 
 ## Suite du projet
 
-L'[analyse critique](docs/ANALYSE.md) sépare les constats vérifiés, les hypothèses musicales à écouter et les préférences à reconfirmer. Le [backlog](docs/BACKLOG.md) traduit ces constats en lots avec priorités, dépendances et critères d'acceptation. Les améliorations proposées n'ont pas encore été implémentées.
+L'[analyse critique](docs/ANALYSE.md) conserve l'audit initial. Le [backlog](docs/BACKLOG.md) précise les décisions et le statut des évolutions. Le [lot cohérence et découverte](docs/LOT-COHERENCE-DECOUVERTE.md) décrit les changements, leurs tests et leurs limites.
+
+Les sorties vérifient désormais la compatibilité des phrases avec les instruments et l'absence de batterie. Le panneau « Ce qui compose ce prompt » indique les phrases conservées, retirées pour la longueur ou écartées pour cohérence. Les aperçus sous les contrôles suivent l'angle actif ; les curseurs restent les réglages de départ.
+
+« Hors zone » explore quatre directions : rythme, harmonie lumineuse, geste acoustique et espace dépouillé. Six greffes sur trois territoires disposent d'une interaction discrète ou structurante. Le format, le remplissage et la structure détaillée restent en place jusqu'à la comparaison demandée. Le mode chanté reste dans SONORA.

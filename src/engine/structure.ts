@@ -10,7 +10,7 @@ export function buildStructure(s: Settings, lex: Lexicon): string {
   const drums = lex.drums.find((d) => d.id === s.drums)?.short ?? 'drums';
   const v: Record<string, string> = {
     lead: byRole('lead')?.short ?? sig,
-    low: byRole('low')?.short ?? 'bass',
+    low: byRole('low')?.short ?? 'motif',
     texture: byRole('texture', 'support')?.short ?? 'atmosphere',
     sig,
     drums,
@@ -20,6 +20,6 @@ export function buildStructure(s: Settings, lex: Lexicon): string {
     .map((line) => (line === '{solo}' ? (soloInst ? `[${soloInst.solo}]` : '') : line.replace(/\{(\w+)\}/g, (_, k) => v[k] ?? k)))
     .filter(Boolean)
     // sans batterie : pas de mention de batterie pleine
-    .map((line) => (s.drums === 'none' ? line.replace(/, full drums|full drums/g, 'full weight') : line));
+    .map((line) => (s.drums === 'none' ? line.replace(/, full drums|full drums/g, ', full weight') : line));
   return ['[Instrumental]', ...lines].join('\n');
 }

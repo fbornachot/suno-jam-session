@@ -46,7 +46,13 @@
     {
       "id": "organ_psych",
       "label": "Orgue psyché",
-      "phrase": "a swirling rotary-speaker organ"
+      "phrase": "a swirling rotary-speaker organ",
+      "interaction": {
+        "role": "Orgue entre les attaques",
+        "subtle": "a midrange rotary organ answers the main motif only in the rests",
+        "structural": "a rotary organ takes over alternate phrases of the main motif, the original lead answering in short bursts"
+      },
+      "short": "organ responses"
     },
     {
       "id": "shoegaze_wall",
@@ -78,7 +84,13 @@
     {
       "id": "low_brass",
       "label": "Cuivres graves",
-      "phrase": "low brass swells, brooding and slow"
+      "phrase": "low brass swells, brooding and slow",
+      "interaction": {
+        "role": "Cuivres graves en contrepoint",
+        "subtle": "low brass sustains a quiet counterline beneath the main motif, entering between attacks",
+        "structural": "low brass carries a slow counter-motif against the quicker main figure, with alternating entrances to keep the low register clear"
+      },
+      "short": "low brass counterpoint"
     }
   ],
   "extra": [

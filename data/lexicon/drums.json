@@ -91,9 +91,9 @@
  },
  {
   "id": "none",
-  "label": "Sans batterie",
+  "label": "Sans batterie ni percussions rythmiques",
   "phrase": [
-   "no percussion, pulse carried by bass and repeated figures"
+   "no drums or unpitched percussion, pulse carried by repeated melodic figures"
   ],
   "short": "pulse"
  },

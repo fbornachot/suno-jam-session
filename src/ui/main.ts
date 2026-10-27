@@ -2,14 +2,14 @@
 import { territories, lexicon } from '../engine/data';
 import { resolve, compileAll, MIN_LEN, MAX_LEN, type Settings, type Territory, type Output, type AngleId, type SliderId } from '../engine';
 import { randomSeed } from '../engine/seed';
-import { bucket } from '../engine/buckets';
+import { SLIDER_IDS } from '../engine/types';
 
 const STORE = 'session-rack:v1';
 const KEYS = ['any', ...['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'].flatMap((n) => [`${n} minor`, `${n} major`])];
 const ANGLE_INFO: Record<AngleId, { name: string; sub: string }> = {
   access: { name: 'Accessible', sub: 'à signature' },
   hybrid: { name: 'Hybride', sub: 'greffe proche' },
-  risk: { name: 'Hors zone', sub: 'greffe lointaine' },
+  risk: { name: 'Hors zone', sub: 'quatre directions' },
 };
 
 interface State { territory: string; settings: Settings; seed: number; angle: AngleId }
@@ -29,7 +29,8 @@ const h = <K extends keyof HTMLElementTagNameMap>(tag: K, attrs: Record<string, 
 };
 const byId = <T extends { id: string }>(list: T[], id: string | null | undefined) => list.find((x) => x.id === id);
 const label = (list: { id: string; label: string }[], id: string | null) => byId(list, id)?.label ?? '—';
-const first = (p: string | string[] | undefined) => (Array.isArray(p) ? p[0] : p ?? '');
+const previews: { el: HTMLElement; key: string }[] = [];
+function preview(key: string) { const el = h('span', { class: 'field_hint', 'data-preview': key }); previews.push({ el, key }); return el; }
 const graftsOf = (t: Territory) => [...t.grafts, ...t.far];
 
 // --- état
@@ -65,6 +66,7 @@ function renderControls() {
   const t = terr();
   const s = state.settings;
   controls.replaceChildren();
+  previews.length = 0;
 
   // 1 · Territoire
   const grid = h('div', { class: 'territory_grid' });
@@ -87,17 +89,17 @@ function renderControls() {
   controls.append(block('CH2', 'ADN', 'La référence nomme le preset ; le prompt ne contient que des descripteurs.', list));
 
   // 3 · Réglages
-  controls.append(block('CH3', 'Réglages', 'Sous chaque réglage, la phrase qu’il ajoute au prompt.',
+  controls.append(block('CH3', 'Réglages', 'Réglages de départ. Les aperçus indiquent le texte et les valeurs de l’angle affiché ; les curseurs restent ceux de départ.',
     group('Forme', () => `${label(lexicon.signatures, s.signature)} · ${label(lexicon.arcs, s.arc)}`, [
-      select('Signature à 30 s', lexicon.signatures, s.signature, (v) => (s.signature = v)),
-      select('Arc', lexicon.arcs, s.arc, (v) => (s.arc = v)),
+      select('Signature à 30 s', lexicon.signatures, s.signature, (v) => (s.signature = v), 'signature'),
+      select('Arc', lexicon.arcs, s.arc, (v) => (s.arc = v), 'arc'),
     ], true),
     group('Batterie', () => label(lexicon.drums, s.drums), [
-      select('Caractère', lexicon.drums, s.drums, (v) => (s.drums = v), true),
+      select('Caractère', lexicon.drums, s.drums, (v) => (s.drums = v), 'drums'),
       slider('placement', 'Placement', 'humain', 'machine'),
     ], true),
     group('Son', () => label(lexicon.eras, s.era), [
-      select('Époque', lexicon.eras, s.era, (v) => (s.era = v), true),
+      select('Époque', lexicon.eras, s.era, (v) => (s.era = v), 'era'),
       slider('grain', 'Grain / friction'),
       slider('saturation', 'Saturation'),
       slider('space', 'Espace'),
@@ -119,7 +121,7 @@ function renderControls() {
       selectGraft(t, s),
       h('label', { class: 'toggle' },
         h('input', { type: 'checkbox', id: 'voiceRoom', checked: s.voiceRoom, onchange: (e: Event) => { s.voiceRoom = (e.target as HTMLInputElement).checked; commit(); } }),
-        'Laisser de la place pour une voix (topline Sonora)'),
+        'Laisser de la place pour une voix (topline Sonora)', preview('voiceRoom')),
     ]),
   ));
 }
@@ -134,21 +136,18 @@ function group(title: string, sum: () => string, kids: Node[], open = false) {
 function field(name: string, control: Node, value?: HTMLElement) {
   return h('label', { class: 'field' }, h('span', { class: 'field_label' }, name, value ?? null), control);
 }
-function hint(text: string) {
-  return h('span', { class: 'field_hint' }, text ? `→ ${text}` : '→ rien d’ajouté au prompt');
-}
-function select(name: string, list: { id: string; label: string; phrase?: string | string[] }[], current: string, set: (v: string) => void, preview = false) {
+function select(name: string, list: { id: string; label: string; phrase?: string | string[] }[], current: string, set: (v: string) => void, previewKey = '') {
   const id = 'sel-' + name.toLowerCase().replace(/[^a-z]+/g, '-');
-  const hn = preview ? hint(first(byId(list, current)?.phrase)) : null;
-  const f = field(name, h('select', { id, onchange: (e: Event) => { const v = (e.target as HTMLSelectElement).value; set(v); if (hn) hn.textContent = `→ ${first(byId(list, v)?.phrase)}`; commit(); } },
+  const hn = previewKey ? preview(previewKey) : null;
+  const f = field(name, h('select', { id, onchange: (e: Event) => { const v = (e.target as HTMLSelectElement).value; set(v); commit(); } },
     ...list.map((x) => h('option', { value: x.id, selected: x.id === current }, x.label))));
   if (hn) f.append(hn);
   return f;
 }
 function selectGraft(t: Territory, s: Settings) {
   const opt = (g: { id: string; label: string }) => h('option', { value: g.id, selected: s.graft === g.id }, g.label);
-  const hn = hint(first(byId(graftsOf(t), s.graft)?.phrase));
-  const f = field('Greffe (angle accessible)', h('select', { id: 'graft', onchange: (e: Event) => { const v = (e.target as HTMLSelectElement).value; s.graft = v || null; hn.textContent = s.graft ? `→ ${first(byId(graftsOf(t), v)?.phrase)}` : '→ rien d’ajouté au prompt'; commit(); } },
+  const hn = preview('graft');
+  const f = field('Greffe (angle accessible)', h('select', { id: 'graft', onchange: (e: Event) => { const v = (e.target as HTMLSelectElement).value; s.graft = v || null; commit(); } },
     h('option', { value: '', selected: !s.graft }, 'Aucune'),
     h('optgroup', { label: 'Proches du territoire' }, ...t.grafts.map(opt)),
     h('optgroup', { label: 'Lointaines (hors zone)' }, ...t.far.map(opt))));
@@ -158,9 +157,9 @@ function selectGraft(t: Territory, s: Settings) {
 function slider(key: SliderId, name: string, lo = '', hi = '') {
   const s = state.settings;
   const val = h('span', { class: 'field_value' }, String(s.sliders[key]));
-  const hn = hint(bucket(lexicon.sliders[key], s.sliders[key]));
+  const hn = preview(key);
   const input = h('input', { type: 'range', id: 'sl-' + key, min: 0, max: 100, step: 5, value: s.sliders[key],
-    oninput: (e: Event) => { s.sliders[key] = +(e.target as HTMLInputElement).value; val.textContent = String(s.sliders[key]); const b = bucket(lexicon.sliders[key], s.sliders[key]); hn.textContent = b ? `→ ${b}` : '→ rien d’ajouté au prompt'; commit(); } });
+    oninput: (e: Event) => { s.sliders[key] = +(e.target as HTMLInputElement).value; val.textContent = String(s.sliders[key]); commit(); } });
   const f = field(name, input, val);
   if (lo || hi) f.append(h('span', { class: 'text-size-small', style: 'display:flex;justify-content:space-between' }, h('span', {}, lo), h('span', {}, hi)));
   f.append(hn);
@@ -177,7 +176,7 @@ function chips(name: string, list: { id: string; label: string }[], get: () => s
     }));
   };
   draw();
-  return h('div', { class: 'field' }, h('span', { class: 'field_label' }, name), wrap);
+  return h('div', { class: 'field' }, h('span', { class: 'field_label' }, name), wrap, preview(name.startsWith('Moods') ? 'moods' : 'instruments'));
 }
 
 // --- sortie
@@ -209,13 +208,39 @@ function diff(o: Output, base: Settings) {
   if (o.settings.graft !== base.graft) parts.push('Greffe : ', h('strong', {}, label(graftsOf(terr()), o.settings.graft)));
   if (o.settings.arc !== base.arc) parts.push(parts.length ? ' · ' : '', 'Arc : ', h('strong', {}, label(lexicon.arcs, o.settings.arc)));
   if (o.settings.signature !== base.signature) parts.push(' · Signature : ', h('strong', {}, label(lexicon.signatures, o.settings.signature)));
+  for (const key of SLIDER_IDS) if (o.settings.sliders[key] !== base.sliders[key]) parts.push(parts.length ? ' · ' : '', `${lexicon.sliders[key].label} : ${base.sliders[key]} → ${o.settings.sliders[key]}`);
+  if (o.settings.moods.join() !== base.moods.join()) parts.push(parts.length ? ' · ' : '', 'Moods : ' + o.settings.moods.map(id => label(lexicon.moods, id)).join(', '));
+  if (o.settings.instruments.join() !== base.instruments.join()) parts.push(parts.length ? ' · ' : '', 'Instruments : ' + (o.settings.instruments.map(id => label(lexicon.instruments, id)).join(', ') || 'libres'));
   return parts.length ? parts : ['Tes réglages, tels quels.'];
+}
+
+function statusLabel(status: Output['blocks'][number]['status']) {
+  return { kept: 'conservé', dropped: 'retiré pour la longueur', incompatible: 'écarté pour cohérence', structure: 'porté par Structure' }[status];
+}
+function updatePreviews(o: Output) {
+  for (const { el, key } of previews) {
+    const blockKey = key === 'placement' ? 'drums' : key;
+    const b = o.blocks.find(b => b.key === blockKey);
+    let prefix = '';
+    if (SLIDER_IDS.includes(key as SliderId)) {
+      const k = key as SliderId;
+      const value = o.settings.sliders[k];
+      const buckets = lexicon.sliders[k].buckets;
+      const n = buckets.findIndex(b => value <= b.max);
+      prefix = `Angle affiché : ${value} · palier ${n + 1}/${buckets.length} (${n ? buckets[n - 1].max + 1 : 0}–${buckets[n].max}). `;
+    }
+    el.textContent = key === 'placement' && o.settings.drums === 'none' ? 'Sans effet : aucune batterie ni percussion rythmique.'
+      : prefix + (b ? `${statusLabel(b.status)} → ${b.text}${b.reason ? ' — ' + b.reason : ''}` : 'Aucune phrase ajoutée pour ce réglage.');
+  }
+  const placement = document.getElementById('sl-placement') as HTMLInputElement | null;
+  if (placement) placement.disabled = state.settings.drums === 'none';
 }
 
 function renderOutput() {
   const t = terr();
   const outs = compileAll(state.settings, t, lexicon, state.seed);
   const o = outs.find((x) => x.angle === state.angle)!;
+  updatePreviews(o);
   const tabs = h('div', { class: 'angle_tabs', role: 'tablist' }, ...outs.map((x) => h('button', {
     type: 'button', role: 'tab', class: `angle_tab${x.angle === state.angle ? ' is-active' : ''}`, 'aria-selected': String(x.angle === state.angle),
     onclick: () => { state.angle = x.angle; save(); renderOutput(); },
@@ -223,7 +248,7 @@ function renderOutput() {
 
   const issues = o.lint.length ? o.lint : [{ level: 'ok', message: 'Aucun anti-attracteur détecté' }];
   output.replaceChildren(
-    block('OUT', 'Sortie', null, tabs, h('p', { class: 'angle_diff' }, ...diff(o, state.settings))),
+    block('OUT', 'Sortie', o.discovery ? `Direction : ${o.discovery}. Territoire, tempo, tonalité et choix de batterie conservés.` : null, tabs, h('p', { class: 'angle_diff' }, ...diff(o, state.settings)), ...o.changes.map(text => h('p', { class: 'block_hint' }, text))),
     outBox('Style prompt', o.prompt, { main: true, note: 'champ Style' }),
     h('div', { class: 'output_actions' },
       h('button', { type: 'button', class: 'btn_secondary', onclick: () => { state.seed = randomSeed(); save(); renderOutput(); } }, 'Nouveau tirage'),
@@ -233,6 +258,8 @@ function renderOutput() {
       h('div', { style: 'display:grid;gap:14px;min-width:0' },
         outBox('Exclude styles', o.exclude),
         outBox('Style tags', o.styleTags, { note: 'version courte' }))),
+    h('details', { class: 'group' }, h('summary', {}, 'Ce qui compose ce prompt'),
+      h('div', { class: 'group_body' }, ...o.blocks.map(b => h('div', { class: 'field' }, h('strong', {}, `${b.label} — ${statusLabel(b.status)}`), h('span', { class: 'field_hint' }, b.text), b.reason ? h('span', { class: 'field_hint' }, b.reason) : null)))),
     h('ul', { class: 'lint_list' }, ...issues.map((i) => h('li', { class: `lint_item is-${i.level}` }, h('span', { class: 'lint_dot' }), i.message))),
   );
 }

@@ -2,10 +2,6 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { test, expect } from 'vitest';
 import { territories, lexicon } from '../src/engine/data';
 import { compile, resolve, ANGLES } from '../src/engine';
-import { buildSlots, render } from '../src/engine/assemble';
-import { deriveAngle } from '../src/engine/angles';
-import { fit } from '../src/engine/fit';
-import { makeRng } from '../src/engine/seed';
 
 // Audit descriptif reproductible : les résultats ne constituent pas un test audio.
 test('mesurer le comportement du moteur sans modifier les sorties', () => {
@@ -15,20 +11,19 @@ test('mesurer le comportement du moteur sans modifier les sorties', () => {
     outputsWithFillers: 0, fillerCharacters: 0,
     removed: {} as Record<string, number>,
     available: {} as Record<string, number>,
-    firstEraHintDiffers: 0, eraPresent: 0,
+    firstLexiconEraDiffers: 0, eraPresent: 0,
     voiceRoomRemoved: 0, voiceRoomCases: 0,
     examples: {} as Record<string, unknown>,
   };
   for (const t of territories) for (const p of [null, ...t.presets.map(p => p.id)]) {
     for (let seed = 1; seed <= 25; seed++) for (const angle of ANGLES) {
       const base = resolve(t, p);
-      const rng = makeRng(seed + ANGLES.indexOf(angle) * 7919);
-      const s = deriveAngle(angle, base, t, lexicon, rng);
-      const all = buildSlots(s, t, lexicon, rng);
-      const kept = fit(all, [...t.extra, ...lexicon.rules.fillers], rng);
-      const text = render(kept);
-      // Assure que l'instrumentation suit réellement le compilateur public.
-      expect(text).toBe(compile(base, t, lexicon, seed, angle).prompt);
+      const output = compile(base, t, lexicon, seed, angle);
+      const s = output.settings;
+      const all = output.blocks.filter(b => b.status !== 'incompatible' && !b.key.startsWith('filler'));
+      const kept = output.blocks.filter(b => b.status === 'kept');
+      const text = kept.map(b => b.text).join(' ');
+      expect(text).toBe(output.prompt);
       report.total++;
       report.minLength = Math.min(report.minLength, text.length);
       report.maxLength = Math.max(report.maxLength, text.length);
@@ -47,7 +42,7 @@ test('mesurer le comportement du moteur sans modifier les sorties', () => {
         report.eraPresent++;
         const phrases = lexicon.eras.find(e => e.id === s.era)!.phrase;
         const first = Array.isArray(phrases) ? phrases[0] : phrases;
-        if (era.text.toLowerCase() !== (first.replace(/[.\s]+$/, '') + '.').toLowerCase()) report.firstEraHintDiffers++;
+        if (era.text.toLowerCase() !== (first.replace(/[.\s]+$/, '') + '.').toLowerCase()) report.firstLexiconEraDiffers++;
       }
       const vocal = compile({ ...base, voiceRoom: true }, t, lexicon, seed, angle);
       report.voiceRoomCases++;
@@ -61,6 +56,6 @@ test('mesurer le comportement du moteur sans modifier les sorties', () => {
   report.examples.noInstruments = compile({ ...resolve(t), instruments: [], arc: 'central_break' }, t, lexicon, 1);
   expect(report.total).toBe(4500);
   mkdirSync('docs', { recursive: true });
-  writeFileSync('docs/audit-results.json', JSON.stringify(report, null, 2) + '\n');
+  writeFileSync('docs/audit-results-current.json', JSON.stringify(report, null, 2) + '\n');
   console.log(JSON.stringify({ ...report, examples: Object.keys(report.examples) }, null, 2));
 });

@@ -1,0 +1,535 @@
+{
+  "protocol": "12 territoires × (4 presets + base) × 25 seeds × 3 angles",
+  "total": 4500,
+  "minLength": 900,
+  "maxLength": 990,
+  "outputsWithFillers": 1324,
+  "fillerCharacters": 91657,
+  "removed": {
+    "arc": 966,
+    "closer": 1914,
+    "era": 135
+  },
+  "available": {
+    "core": 4500,
+    "era": 4500,
+    "drums": 4500,
+    "signature": 4500,
+    "instruments": 4500,
+    "saturation": 3795,
+    "tension": 4500,
+    "hypnosis": 4500,
+    "space": 4500,
+    "arc": 4500,
+    "moods": 4500,
+    "tempo": 4500,
+    "closer": 4238,
+    "graft": 3625,
+    "grain": 3396,
+    "detail": 2400,
+    "roots": 2070
+  },
+  "firstLexiconEraDiffers": 2015,
+  "eraPresent": 4365,
+  "voiceRoomRemoved": 0,
+  "voiceRoomCases": 4500,
+  "examples": {
+    "arcRemoved": {
+      "territory": "trip_hop",
+      "preset": "sour_noir",
+      "seed": 1,
+      "angle": "access",
+      "text": "Structure: hypnotic repetition, slow evolving layers, no climax, trance through insistence."
+    },
+    "closerRemoved": {
+      "territory": "trip_hop",
+      "preset": "sour_noir",
+      "seed": 1,
+      "angle": "access",
+      "text": "Sound with identity and grain, drums with character, groove with a real engine."
+    },
+    "eraRemoved": {
+      "territory": "indie_tense",
+      "preset": null,
+      "seed": 24,
+      "angle": "risk",
+      "text": "Mid-2000s indie rock recording, tight live tracking, vintage amps, modern clarity."
+    },
+    "noDrums": {
+      "angle": "access",
+      "settings": {
+        "territory": "rap_beat",
+        "preset": "dusty_bap",
+        "era": "90s_analog",
+        "drums": "none",
+        "arc": "hypnosis",
+        "signature": "loop",
+        "moods": [
+          "nocturnal",
+          "defiant"
+        ],
+        "bpm": 92,
+        "key": "C minor",
+        "sliders": {
+          "grain": 70,
+          "saturation": 60,
+          "space": 35,
+          "tension": 65,
+          "hypnosis": 80,
+          "roots": 10,
+          "placement": 25
+        },
+        "instruments": [
+          "rhodes",
+          "bass_upright",
+          "turntable"
+        ],
+        "graft": "horn_chops",
+        "voiceRoom": false
+      },
+      "blocks": [
+        {
+          "key": "core",
+          "label": "Identité",
+          "text": "Hip-hop production, strong rhythmic identity.",
+          "status": "kept"
+        },
+        {
+          "key": "era",
+          "label": "Époque",
+          "text": "Mid-1990s analog-to-digital studio, sampler grit, tape and early digital hybrid, dark warm mix.",
+          "status": "kept"
+        },
+        {
+          "key": "drums",
+          "label": "Batterie / placement",
+          "text": "No drums or unpitched percussion, pulse carried by repeated melodic figures.",
+          "status": "kept"
+        },
+        {
+          "key": "signature",
+          "label": "Signature",
+          "text": "One magnetic loop repeated until it becomes a world.",
+          "status": "kept"
+        },
+        {
+          "key": "instruments",
+          "label": "Instruments",
+          "text": "Featuring woody upright bass, warm Rhodes electric piano with tremolo and turntable scratches as rhythmic texture.",
+          "status": "kept"
+        },
+        {
+          "key": "graft",
+          "label": "Greffe",
+          "text": "Plus short midrange horn chops answer the main loop in its rests, leaving the low register clear.",
+          "status": "kept"
+        },
+        {
+          "key": "saturation",
+          "label": "Saturation",
+          "text": "Warm analog saturation on the bus, harmonics thick.",
+          "status": "kept"
+        },
+        {
+          "key": "tension",
+          "label": "Tension",
+          "text": "Dark tense harmony, minor color, dissonant pulls.",
+          "status": "kept"
+        },
+        {
+          "key": "hypnosis",
+          "label": "Hypnose",
+          "text": "Hypnotic insistent repetition.",
+          "status": "kept"
+        },
+        {
+          "key": "space",
+          "label": "Espace",
+          "text": "Natural room ambience.",
+          "status": "kept"
+        },
+        {
+          "key": "filler0",
+          "label": "Complément",
+          "text": "Instruments in dialogue rather than stacked.",
+          "status": "kept"
+        },
+        {
+          "key": "arc",
+          "label": "Arc",
+          "text": "Structure: hypnotic repetition, slow evolving layers, no climax, trance through insistence.",
+          "status": "kept"
+        },
+        {
+          "key": "moods",
+          "label": "Moods",
+          "text": "Mood: nocturnal and defiant, swaggering.",
+          "status": "kept"
+        },
+        {
+          "key": "tempo",
+          "label": "Tempo / tonalité",
+          "text": "Around 92 BPM, in C minor.",
+          "status": "kept"
+        },
+        {
+          "key": "closer",
+          "label": "Conclusion",
+          "text": "Sound with identity and grain, every texture physical and close, pulse with a real engine.",
+          "status": "kept"
+        },
+        {
+          "key": "detail",
+          "label": "Détail du preset",
+          "text": "A chopped soul sample loop, crunchy snare, deep swing, crackle between the hits.",
+          "status": "incompatible",
+          "reason": "Détail lié aux réglages initiaux du preset ; vos choix et les variations de cet angle sont prioritaires."
+        },
+        {
+          "key": "grain",
+          "label": "Grain",
+          "text": "Raw worked sound, amp hiss, finger noise and small accidents left in.",
+          "status": "incompatible",
+          "reason": "Instrument absent de la sélection : amp"
+        }
+      ],
+      "changes": [
+        "Greffe ajoutée à la sélection : Cuivres samplés — Cuivres en réponse au motif."
+      ],
+      "discovery": null,
+      "prompt": "Hip-hop production, strong rhythmic identity. Mid-1990s analog-to-digital studio, sampler grit, tape and early digital hybrid, dark warm mix. No drums or unpitched percussion, pulse carried by repeated melodic figures. One magnetic loop repeated until it becomes a world. Featuring woody upright bass, warm Rhodes electric piano with tremolo and turntable scratches as rhythmic texture. Plus short midrange horn chops answer the main loop in its rests, leaving the low register clear. Warm analog saturation on the bus, harmonics thick. Dark tense harmony, minor color, dissonant pulls. Hypnotic insistent repetition. Natural room ambience. Instruments in dialogue rather than stacked. Structure: hypnotic repetition, slow evolving layers, no climax, trance through insistence. Mood: nocturnal and defiant, swaggering. Around 92 BPM, in C minor. Sound with identity and grain, every texture physical and close, pulse with a real engine.",
+      "styleTags": "Hip-hop production, no drums or unpitched percussion, Rhodes, upright bass, scratches, horn sample answers, 92 bpm, C minor, nocturnal, defiant",
+      "structure": "[Instrumental]\n[Intro: loop alone]\n[Verse: pulse, locked groove]\n[Verse: Rhodes added]\n[Break: motif mutates, no climax]\n[Verse: texture thickens]\n[Outro: layers peel away]\n[Fade Out]\n[End]",
+      "exclude": "drums, rap vocals, lo-fi chillhop",
+      "lint": []
+    },
+    "trap": {
+      "angle": "access",
+      "settings": {
+        "territory": "rap_beat",
+        "preset": "cinematic_trap",
+        "era": "modern_wide",
+        "drums": "trap_808",
+        "arc": "hypnosis",
+        "signature": "bassline",
+        "moods": [
+          "menacing",
+          "nocturnal"
+        ],
+        "bpm": 140,
+        "key": "C minor",
+        "sliders": {
+          "grain": 70,
+          "saturation": 60,
+          "space": 65,
+          "tension": 65,
+          "hypnosis": 80,
+          "roots": 10,
+          "placement": 85
+        },
+        "instruments": [
+          "bass_synth",
+          "strings_section",
+          "synth_pad"
+        ],
+        "graft": null,
+        "voiceRoom": false
+      },
+      "blocks": [
+        {
+          "key": "core",
+          "label": "Identité",
+          "text": "Cinematic trap.",
+          "status": "kept"
+        },
+        {
+          "key": "detail",
+          "label": "Détail du preset",
+          "text": "Booming 808 sub-bass slides, dark cinematic strings, hi-hats held back for menace.",
+          "status": "kept"
+        },
+        {
+          "key": "era",
+          "label": "Époque",
+          "text": "Modern large-format production, wide and deep stereo field, analog character kept, hi-fi detail.",
+          "status": "kept"
+        },
+        {
+          "key": "drums",
+          "label": "Batterie / placement",
+          "text": "Deep 808 drums, snappy clap, hi-hat rolls used sparingly, machine-locked tight timing.",
+          "status": "kept"
+        },
+        {
+          "key": "signature",
+          "label": "Signature",
+          "text": "An unforgettable bass figure is the hook.",
+          "status": "kept"
+        },
+        {
+          "key": "instruments",
+          "label": "Instruments",
+          "text": "Featuring deep analog synth bass, small string section, close and human and slow analog synth pad, evolving filter.",
+          "status": "kept"
+        },
+        {
+          "key": "saturation",
+          "label": "Saturation",
+          "text": "Warm analog saturation on the bus, harmonics thick.",
+          "status": "kept"
+        },
+        {
+          "key": "tension",
+          "label": "Tension",
+          "text": "Dark tense harmony, minor color, dissonant pulls.",
+          "status": "kept"
+        },
+        {
+          "key": "hypnosis",
+          "label": "Hypnose",
+          "text": "Hypnotic insistent repetition.",
+          "status": "kept"
+        },
+        {
+          "key": "space",
+          "label": "Espace",
+          "text": "Deep spring and plate reverbs, wide space.",
+          "status": "kept"
+        },
+        {
+          "key": "filler0",
+          "label": "Complément",
+          "text": "Snare cracks like a whip.",
+          "status": "kept"
+        },
+        {
+          "key": "filler1",
+          "label": "Complément",
+          "text": "The first seconds promise something.",
+          "status": "kept"
+        },
+        {
+          "key": "filler2",
+          "label": "Complément",
+          "text": "Bass and drums locked as one engine.",
+          "status": "kept"
+        },
+        {
+          "key": "arc",
+          "label": "Arc",
+          "text": "Insistent repeating figure that mutates slowly, no drop, no climax.",
+          "status": "kept"
+        },
+        {
+          "key": "moods",
+          "label": "Moods",
+          "text": "Mood: quietly menacing and nocturnal.",
+          "status": "kept"
+        },
+        {
+          "key": "tempo",
+          "label": "Tempo / tonalité",
+          "text": "Around 140 BPM, in C minor.",
+          "status": "kept"
+        },
+        {
+          "key": "closer",
+          "label": "Conclusion",
+          "text": "Mix with physical presence and human friction, characterful drums, bass with weight.",
+          "status": "kept"
+        },
+        {
+          "key": "grain",
+          "label": "Grain",
+          "text": "Raw worked sound, amp hiss, finger noise and small accidents left in.",
+          "status": "incompatible",
+          "reason": "Instrument absent de la sélection : amp"
+        }
+      ],
+      "changes": [],
+      "discovery": null,
+      "prompt": "Cinematic trap. Booming 808 sub-bass slides, dark cinematic strings, hi-hats held back for menace. Modern large-format production, wide and deep stereo field, analog character kept, hi-fi detail. Deep 808 drums, snappy clap, hi-hat rolls used sparingly, machine-locked tight timing. An unforgettable bass figure is the hook. Featuring deep analog synth bass, small string section, close and human and slow analog synth pad, evolving filter. Warm analog saturation on the bus, harmonics thick. Dark tense harmony, minor color, dissonant pulls. Hypnotic insistent repetition. Deep spring and plate reverbs, wide space. Snare cracks like a whip. The first seconds promise something. Bass and drums locked as one engine. Insistent repeating figure that mutates slowly, no drop, no climax. Mood: quietly menacing and nocturnal. Around 140 BPM, in C minor. Mix with physical presence and human friction, characterful drums, bass with weight.",
+      "styleTags": "Cinematic trap, 808 drums, synth bass, strings, pads, 140 bpm, C minor, quietly menacing, nocturnal",
+      "structure": "[Instrumental]\n[Intro: bassline alone]\n[Verse: 808 drums, locked groove]\n[Verse: strings added]\n[Break: motif mutates, no climax]\n[Verse: texture thickens]\n[Outro: layers peel away]\n[Fade Out]\n[End]",
+      "exclude": "rap vocals, lo-fi chillhop, EDM",
+      "lint": []
+    },
+    "noInstruments": {
+      "angle": "access",
+      "settings": {
+        "territory": "trip_hop",
+        "preset": null,
+        "era": "90s_analog",
+        "drums": "breakbeat_dirty",
+        "arc": "central_break",
+        "signature": "loop",
+        "moods": [
+          "nocturnal",
+          "menacing"
+        ],
+        "bpm": 78,
+        "key": "D minor",
+        "sliders": {
+          "grain": 70,
+          "saturation": 60,
+          "space": 65,
+          "tension": 75,
+          "hypnosis": 75,
+          "roots": 10,
+          "placement": 35
+        },
+        "instruments": [],
+        "graft": null,
+        "voiceRoom": false
+      },
+      "blocks": [
+        {
+          "key": "core",
+          "label": "Identité",
+          "text": "Brooding downtempo trip-hop, dusty and noir.",
+          "status": "kept"
+        },
+        {
+          "key": "era",
+          "label": "Époque",
+          "text": "Mid-1990s analog-to-digital studio, sampler grit, tape and early digital hybrid, dark warm mix.",
+          "status": "kept"
+        },
+        {
+          "key": "drums",
+          "label": "Batterie / placement",
+          "text": "Heavy chopped breakbeat, gritty sampler texture, lazy swing, laid-back human timing, sitting behind the beat.",
+          "status": "kept"
+        },
+        {
+          "key": "signature",
+          "label": "Signature",
+          "text": "One magnetic loop repeated until it becomes a world.",
+          "status": "kept"
+        },
+        {
+          "key": "saturation",
+          "label": "Saturation",
+          "text": "Warm analog saturation on the bus, harmonics thick.",
+          "status": "kept"
+        },
+        {
+          "key": "tension",
+          "label": "Tension",
+          "text": "Dark tense harmony, minor color, dissonant pulls.",
+          "status": "kept"
+        },
+        {
+          "key": "hypnosis",
+          "label": "Hypnose",
+          "text": "Hypnotic insistent repetition.",
+          "status": "kept"
+        },
+        {
+          "key": "space",
+          "label": "Espace",
+          "text": "Deep spring and plate reverbs, wide space.",
+          "status": "kept"
+        },
+        {
+          "key": "filler0",
+          "label": "Complément",
+          "text": "Instruments in dialogue rather than stacked.",
+          "status": "kept"
+        },
+        {
+          "key": "filler1",
+          "label": "Complément",
+          "text": "The first seconds promise something.",
+          "status": "kept"
+        },
+        {
+          "key": "filler2",
+          "label": "Complément",
+          "text": "Sampler pitch-down artifacts.",
+          "status": "kept"
+        },
+        {
+          "key": "filler3",
+          "label": "Complément",
+          "text": "Vinyl crackle under everything.",
+          "status": "kept"
+        },
+        {
+          "key": "filler4",
+          "label": "Complément",
+          "text": "Texture matters more than notes.",
+          "status": "kept"
+        },
+        {
+          "key": "filler5",
+          "label": "Complément",
+          "text": "Every part has a reason to exist.",
+          "status": "kept"
+        },
+        {
+          "key": "filler6",
+          "label": "Complément",
+          "text": "Space between the notes.",
+          "status": "kept"
+        },
+        {
+          "key": "filler7",
+          "label": "Complément",
+          "text": "Transients kept alive, dynamics breathing.",
+          "status": "kept"
+        },
+        {
+          "key": "arc",
+          "label": "Arc",
+          "text": "Groove-driven first half, a perception-shifting middle break, transformed return.",
+          "status": "kept"
+        },
+        {
+          "key": "moods",
+          "label": "Moods",
+          "text": "Mood: nocturnal and quietly menacing.",
+          "status": "kept"
+        },
+        {
+          "key": "tempo",
+          "label": "Tempo / tonalité",
+          "text": "Around 78 BPM, in D minor.",
+          "status": "kept"
+        },
+        {
+          "key": "grain",
+          "label": "Grain",
+          "text": "Raw worked sound, amp hiss, finger noise and small accidents left in.",
+          "status": "incompatible",
+          "reason": "Instrument absent de la sélection : amp"
+        },
+        {
+          "key": "closer",
+          "label": "Conclusion",
+          "text": "Mix with physical presence and human friction, characterful drums, bass with weight.",
+          "status": "incompatible",
+          "reason": "Instrument absent de la sélection : bass"
+        }
+      ],
+      "changes": [
+        "Signature « Ligne de basse » remplacée par Boucle : sa source sonore n’est pas sélectionnée."
+      ],
+      "discovery": null,
+      "prompt": "Brooding downtempo trip-hop, dusty and noir. Mid-1990s analog-to-digital studio, sampler grit, tape and early digital hybrid, dark warm mix. Heavy chopped breakbeat, gritty sampler texture, lazy swing, laid-back human timing, sitting behind the beat. One magnetic loop repeated until it becomes a world. Warm analog saturation on the bus, harmonics thick. Dark tense harmony, minor color, dissonant pulls. Hypnotic insistent repetition. Deep spring and plate reverbs, wide space. Instruments in dialogue rather than stacked. The first seconds promise something. Sampler pitch-down artifacts. Vinyl crackle under everything. Texture matters more than notes. Every part has a reason to exist. Space between the notes. Transients kept alive, dynamics breathing. Groove-driven first half, a perception-shifting middle break, transformed return. Mood: nocturnal and quietly menacing. Around 78 BPM, in D minor.",
+      "styleTags": "Brooding downtempo trip-hop, breakbeat, 78 bpm, D minor, nocturnal, quietly menacing",
+      "structure": "[Instrumental]\n[Intro: breakbeat and motif]\n[Verse: loop]\n[Chorus: full band, driving]\n[Break: everything drops]\n[Bridge: atmosphere, new color]\n[Chorus: loop returns, heavier]\n[Outro: cut dead]\n[End]",
+      "exclude": "lo-fi chillhop, jazzhop, EDM",
+      "lint": [
+        {
+          "level": "warn",
+          "message": "Aucun instrument : Suno choisira seul"
+        },
+        {
+          "level": "warn",
+          "message": "Signature « Ligne de basse » remplacée par Boucle : sa source sonore n’est pas sélectionnée."
+        }
+      ]
+    }
+  }
+}

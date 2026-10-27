@@ -3,8 +3,8 @@
   "label": "Rap / beat",
   "blurb": "Boucle qui hoche la tête, batterie qui claque, sample poussiéreux.",
   "core": [
-    "hard-hitting hip-hop beat, head-nod groove",
-    "dusty boom-bap production, heavy swing"
+    "hip-hop production, head-nod groove",
+    "hip-hop production, strong rhythmic identity"
   ],
   "tags": [
     "hip-hop beat",
@@ -46,7 +46,13 @@
     {
       "id": "horn_chops",
       "label": "Cuivres samplés",
-      "phrase": "chopped horn stabs from an old soul record"
+      "phrase": "chopped horn stabs from an old soul record",
+      "interaction": {
+        "role": "Cuivres en réponse au motif",
+        "subtle": "short midrange horn chops answer the main loop in its rests, leaving the low register clear",
+        "structural": "chopped midrange horns take over every second statement of the main loop while its pulse stays fixed"
+      },
+      "short": "horn sample answers"
     },
     {
       "id": "scratches",
@@ -56,7 +62,13 @@
     {
       "id": "flute_loop",
       "label": "Flûte samplée",
-      "phrase": "a looped breathy jazz flute sample"
+      "phrase": "a looped breathy jazz flute sample",
+      "interaction": {
+        "role": "Flûte en contrechant",
+        "subtle": "a high breathy flute sample answers the loop endings with two-note phrases",
+        "structural": "a high flute sample shifts its phrase across the main loop, keeping the pulse fixed and the low register open"
+      },
+      "short": "flute counterline"
     },
     {
       "id": "detuned_piano",

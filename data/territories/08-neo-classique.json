@@ -46,7 +46,13 @@
     {
       "id": "prepared_piano",
       "label": "Piano préparé",
-      "phrase": "a prepared piano, muted and metallic strings"
+      "phrase": "a prepared piano, muted and metallic strings",
+      "interaction": {
+        "role": "Piano préparé en dialogue",
+        "subtle": "a dry prepared piano answers the main motif in the upper register, leaving its long notes untouched",
+        "structural": "a prepared piano carries alternate statements of the main motif in the upper register, contrasting short muted attacks with sustained replies"
+      },
+      "short": "prepared piano dialogue"
     },
     {
       "id": "rain_room",
@@ -61,7 +67,13 @@
     {
       "id": "far_horn",
       "label": "Cor lointain",
-      "phrase": "a distant French horn far behind the strings"
+      "phrase": "a distant French horn far behind the strings",
+      "interaction": {
+        "role": "Cor en relais du motif",
+        "subtle": "a distant French horn echoes the last notes of the motif in a lower register, only during rests",
+        "structural": "a French horn takes over the motif in a lower register while the original lead leaves space, then the roles reverse"
+      },
+      "short": "horn motif relay"
     }
   ],
   "far": [

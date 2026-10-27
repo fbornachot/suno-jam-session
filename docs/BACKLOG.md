@@ -2,7 +2,47 @@
 
 Version initiale : 26 octobre 2026. Source : [analyse critique](ANALYSE.md). Ce fichier est le backlog de référence ; les cartes ne sont pas encore créées en GitHub Issues.
 
-**Statut de toutes les cartes : proposé, non commencé.** La publication des sources, le README, l'audit et ce backlog sont livrés ; les changements fonctionnels restent à réaliser.
+**Décisions utilisateur du 27 octobre 2026 :** priorités 1, 2 et 5 validées ; priorité 3 à tester avant implémentation ; priorités 4 et 6 à étudier. Le mode chanté reste dans SONORA.
+
+**Lot réalisé le 27 octobre :** SJS-01/02/03 et les régressions SJS-14 sont implémentées ; SJS-09 propose quatre directions, SJS-10 fournit les six interactions pilotes prévues. Validation technique : 95 tests, build TypeScript/Vite et audit de 4 500 sorties. L'évaluation sonore des directions et des six greffes reste à faire avant extension du catalogue. Voir [changements et limites](LOT-COHERENCE-DECOUVERTE.md). Les autres cartes ne sont pas implémentées.
+
+## Périmètre validé
+
+Les numéros ci-dessous correspondent aux six propositions présentées à l'utilisateur, et non aux identifiants SJS.
+
+| Proposition | Décision | Cartes et périmètre |
+| --- | --- | --- |
+| 1 — Respecter les choix | Validée | SJS-01, SJS-02 et leurs tests SJS-14 : cohérence entre réglages, Style, Structure et Tags. |
+| 2 — Montrer l'effet réel des réglages | Validée | SJS-03 : phrases réellement conservées, suppressions visibles, différences entre angles. |
+| 3 — Alléger les prompts | Test préalable uniquement | SJS-04, SJS-05, SJS-12 : préparer des variantes comparables hors du moteur de production ; décider après écoute. |
+| 4 — Conserver une trouvaille | À étudier | SJS-07 : cadrer sauvegarde, comparaison et verrous ; ne pas implémenter. |
+| 5 — Diversifier la découverte | Validée | SJS-09, SJS-10 : directions contrastées et interactions musicales explicites, sans dépendre de la sauvegarde ou du journal. |
+| 6 — Apprendre des écoutes | À étudier | SJS-08 : cadrer un journal léger ; ne pas implémenter. |
+| Mode chanté | Hors périmètre de cette application | SJS-16 : porté par SONORA ; conserver ici l'usage instrumental et la place facultative pour une future topline. |
+
+Les autres cartes restent proposées et non validées. Leur priorité technique n'autorise pas leur implémentation. La synchronisation, les comptes, les verrous et les nouvelles sauvegardes ne font pas partie du lot validé.
+
+### Ordre de réalisation retenu
+
+1. SJS-01 et SJS-02 : rendre les sorties cohérentes avec les choix explicites.
+2. SJS-03 : faire provenir les aperçus des blocs effectivement compilés et expliquer les variantes.
+3. SJS-09 et SJS-10 : proposer des découvertes contrastées compatibles avec ces choix. Commencer par six interactions sur trois territoires, puis examiner leur pertinence avant extension du catalogue.
+
+Ajouter les tests de régression SJS-14 au fil de ces changements. Les contrôles de texte ne prouvent pas une amélioration sonore.
+
+### Test préalable de la proposition 3
+
+Préparer des exemples statiques à partir des mêmes réglages et de la même seed sur trois territoires contrastés : rap / beat, rock et acoustique. Conserver les sorties actuelles comme références. Comparer séparément :
+
+- le prompt actuel et une version sans remplissage motivé uniquement par la longueur ;
+- paragraphe et rubriques avec un contenu musical identique ;
+- structure détaillée et développement ouvert, avec un Style identique.
+
+Ne changer qu'une hypothèse à la fois. Fournir les textes et les critères d'écoute : respect de l'intention, identité, liberté de développement et préférence personnelle. L'utilisateur choisit les générations à lancer et leur budget ; aucune génération Suno ni dépense n'est autorisée par ce protocole. Ne pas modifier le comportement par défaut ni ajouter ces options à l'interface avant validation des résultats. Une comparaison textuelle peut révéler des contradictions, pas établir un gagnant sonore.
+
+### Études des propositions 4 et 6
+
+Pour SJS-07, préciser ce qu'il faut retrouver : texte exact, réglages, variantes ou collection de favoris ; comparer une sauvegarde locale minimale à l'export/import. Pour SJS-08, préciser les quelques informations utiles après une écoute et comparer une fiche externe à un journal intégré. Présenter bénéfices et charge d'usage avant de demander une décision d'implémentation.
 
 P0 = fiabilité avant enrichissement ; P1 = prochain cycle de valeur ; P2 = après premiers retours ; P3 = option à confirmer. Tailles relatives : S = localisé, M = plusieurs composants, L = données et moteur et interface. Ce ne sont pas des estimations calendaires.
 
@@ -18,7 +58,7 @@ P0 = fiabilité avant enrichissement ; P1 = prochain cycle de valeur ; P2 = apr�
 | SJS-05 | P1 | Rendu par rubriques et comparaison avec le paragraphe | M | SJS-04 |
 | SJS-07 | P1 | Instantanés, A/B et verrous de session | L | SJS-06 |
 | SJS-08 | P1 | Journal d'écoute et premier protocole A/B | M | SJS-07 |
-| SJS-09 | P1 | Découverte sur plusieurs axes, pas seulement plus sombre | L | SJS-02, SJS-03, SJS-07 |
+| SJS-09 | P1 | Découverte sur plusieurs axes, pas seulement plus sombre | L | SJS-02, SJS-03 ; SJS-07 facultatif et non validé |
 | SJS-10 | P1 | Greffes écrites comme des relations musicales | L | SJS-02, SJS-09 |
 | SJS-11 | P1 | Fiche de passage vers SONORA | M | SJS-05, SJS-07 |
 | SJS-12 | P1 | Développement ouvert, structure détaillée facultative | M | SJS-01, SJS-02 |
@@ -27,7 +67,7 @@ P0 = fiabilité avant enrichissement ; P1 = prochain cycle de valeur ; P2 = apr�
 | SJS-18 | P1 | Parcours clavier et mobile confortable | M | SJS-03 |
 | SJS-19 | P1 | CI et déploiement Git/Vercel traçables | S | Dépôt publié |
 | SJS-15 | P2 | Palette élargie par écoutes, pas par quantité | M | SJS-08, SJS-10 |
-| SJS-16 | P3 | Mode chanté distinct, si confirmé | L | SJS-11, SJS-12, SJS-13, décision utilisateur |
+| SJS-16 | Hors périmètre | Mode chanté confié à SONORA | — | Décision utilisateur du 27 octobre 2026 |
 | SJS-17 | P3 | Synchronisation multiappareil, si nécessaire | L | SJS-07, SJS-08, décision utilisateur |
 
 ## Cartes prêtes à détailler en développement
@@ -86,7 +126,7 @@ P0 = fiabilité avant enrichissement ; P1 = prochain cycle de valeur ; P2 = apr�
 
 **Besoin :** quitter une habitude sans perdre tout ancrage personnel.
 
-**Acceptation :** au moins quatre axes indépendants (rythme, harmonie, instrumentation/geste, espace/forme) ; aucune hausse de tension/grain imposée à toutes les découvertes. Chaque variante expose ce qui reste et ce qui change. Les verrous sont respectés. Inclure des exemples éloignés plus lumineux, plus dépouillés et plus acoustiques. Distance éditoriale expliquée ; efficacité musicale évaluée via SJS-08.
+**Acceptation :** au moins quatre axes indépendants (rythme, harmonie, instrumentation/geste, espace/forme) ; aucune hausse de tension/grain imposée à toutes les découvertes. Chaque variante expose ce qui reste et ce qui change. Les interdictions explicites, notamment l'absence de batterie, sont respectées. Inclure des exemples éloignés plus lumineux, plus dépouillés et plus acoustiques. Distance éditoriale expliquée ; efficacité musicale à évaluer à l'écoute, sans dépendre d'un journal intégré. Les verrous de session restent une extension à étudier dans SJS-07.
 
 ### SJS-10 — Transformer les greffes en interactions
 
@@ -124,11 +164,11 @@ P0 = fiabilité avant enrichissement ; P1 = prochain cycle de valeur ; P2 = apr�
 
 **Acceptation :** sélectionner 3 nouvelles pistes avec l'utilisateur et leur contraste recherché (par exemple groove clair, acoustique rythmique, électronique dépouillée). Chaque piste possède une identité et une interaction musicale décrites, pas un simple nom de genre. Statut éditorial / testé à l'écoute / retenu visible. Conserver ou retirer les pistes selon les essais ; ne pas viser un nombre arbitraire de presets.
 
-### SJS-16 — Mode chanté distinct (à confirmer)
+### SJS-16 — Mode chanté confié à SONORA (hors périmètre)
 
 **Besoin historique :** explorer aussi des chansons tout en conservant un parcours instrumental clair.
 
-**Décision préalable :** ce besoin est-il porté par Suno Jam Session ou laissé à SONORA ?
+**Décision du 27 octobre 2026 :** le mode chanté reste dans SONORA. Ne pas implémenter cette carte dans Suno Jam Session. Les critères ci-dessous sont conservés comme historique de la proposition, sans autorisation de développement.
 
 **Acceptation si retenu :** mode explicite, caractère vocal et rôle de la voix ; aucun `[Instrumental]` ni exclusion vocale incompatible ; contenu Lyrics fourni préservé verbatim. Migration conservant le mode instrumental existant. Cette carte n'autorise pas l'ajout immédiat d'un éditeur de paroles.
 
@@ -152,7 +192,7 @@ P0 = fiabilité avant enrichissement ; P1 = prochain cycle de valeur ; P2 = apr�
 
 **Acceptation :** CI sur PR et main exécutant installation reproductible, tests et build ; permissions minimales et aucun secret embarqué. Connecter le dépôt au projet Vercel existant, vérifier branche de production et aperçu. Afficher ou documenter la révision déployée. Protocole de retour à la version précédente. Le passage du contrôle CI avant production doit être vérifié, pas supposé parce que deux automatisations existent.
 
-## Lots suggérés
+## Lots suggérés initialement (historique, remplacé par le périmètre validé ci-dessus)
 
 1. **Confiance dans les réglages :** SJS-01, SJS-02, SJS-03, SJS-06, avec régressions SJS-14. Sortie : les choix visibles correspondent aux textes copiés.
 2. **Prompts comparables :** SJS-04, SJS-05, SJS-07, SJS-08 ; SJS-19 en parallèle dans le planning. Sortie : quelques comparaisons d'écoute traçables, sans remplissage obligatoire.
